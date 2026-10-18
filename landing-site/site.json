@@ -19,7 +19,8 @@
     "ogImage": "previews/og.jpg"
   },
   "nav": {
-    "cta": "Book on WhatsApp"
+    "cta": "Book on WhatsApp",
+    "menu": "Menu"
   },
   "hero": {
     "eyebrow": "Digital wedding invitations",
@@ -46,6 +47,7 @@
   ],
   "demos": {
     "eyebrow": "Live demos",
+    "swipe": "Swipe to see more screens",
     "title": "Two designs, ready to open",
     "lead": "Tap a demo to open the real invitation, exactly as your guests will see it.",
     "items": [
@@ -174,6 +176,7 @@
   "pricing": {
     "eyebrow": "Packages",
     "title": "Choose what fits your celebration",
+    "swipe": "Swipe to compare packages",
     "lead": "Every package includes a private preview before you share anything.",
     "askLabel": "Price on request",
     "cta": "Choose this package",

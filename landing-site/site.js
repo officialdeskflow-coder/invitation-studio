@@ -26,4 +26,23 @@ if(f)f.addEventListener('submit',function(ev){
   var url=f.getAttribute('data-wa')+'?text='+encodeURIComponent(lines.join('\n'));
   var w=window.open(url,'_blank','noopener');if(!w)location.href=url;
 });
+
+/* phone menu: closes on link tap, Escape, outside tap, or when the screen grows */
+var mnav=d.getElementById('mnav');
+if(mnav){
+  mnav.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('.mpanel a'))mnav.removeAttribute('open')});
+  d.addEventListener('click',function(e){if(mnav.open&&!mnav.contains(e.target))mnav.removeAttribute('open')});
+  d.addEventListener('keydown',function(e){if(e.key==='Escape'&&mnav.open){mnav.removeAttribute('open');var s=mnav.querySelector('summary');if(s)s.focus()}});
+  if(window.matchMedia){var mq=matchMedia('(min-width:900px)');var close=function(m){if(m.matches)mnav.removeAttribute('open')};if(mq.addEventListener)mq.addEventListener('change',close)}
+}
+/* floating chat button hides while a booking button or the form is already on screen */
+var fab=d.querySelector('.fab');
+if(fab&&'IntersectionObserver' in window){
+  var seen=[];var io2=new IntersectionObserver(function(es){es.forEach(function(e){var i=seen.indexOf(e.target);if(e.isIntersecting&&i<0)seen.push(e.target);if(!e.isIntersecting&&i>-1)seen.splice(i,1)});fab.classList.toggle('off',seen.length>0)},{threshold:.5});
+  [].slice.call(d.querySelectorAll('.btn[href*="wa.me"], #bform, .foot')).forEach(function(el){io2.observe(el)});
+}
+/* packages: start on the most chosen card when they are shown as a swipe row */
+var rail=d.querySelector('.plans'),feat=d.querySelector('.plan.featured');
+function centerFeatured(){if(rail&&feat&&rail.scrollWidth>rail.clientWidth+4&&!rail.__moved){rail.scrollLeft=feat.offsetLeft-(rail.clientWidth-feat.offsetWidth)/2}}
+if(rail){rail.addEventListener('scroll',function(){rail.__moved=true},{passive:true});centerFeatured();addEventListener('load',centerFeatured);addEventListener('resize',centerFeatured)}
 })();
