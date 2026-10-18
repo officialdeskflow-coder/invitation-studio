@@ -144,7 +144,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const names = args.includes('--all')
     ? fs.readdirSync(path.join(ROOT, 'clients')).filter((n) => !n.startsWith('_') && fs.existsSync(path.join(ROOT, 'clients', n, 'client.json')))
     : args.filter((a, i) => !a.startsWith('--') && args[i - 1] !== '--out');
-  if (!names.length) { console.error('Usage: node engine/build/build.mjs <client-name> | --all  [--single-file] [--out dir]'); process.exit(1); }
+  if (!names.length) { console.error('Usage: node engine/build/build.mjs <client-name> | --all  [--single-file] [--out dir]\n(npm run build with no name builds everything)'); process.exit(1); }
   let failed = 0;
   for (const n of names) { try { build(n, { split, out }); } catch (e) { failed++; console.error(`✖ ${n}: ${e instanceof TemplateError ? 'template error: ' : ''}${e.message}`); } }
   process.exit(failed ? 1 : 0);

@@ -1,0 +1,7 @@
+{
+  // Cloudflare (Workers Builds / wrangler): publish the finished sales website.
+  // "name" must match the Worker name in your Cloudflare dashboard (it is the first part of your workers.dev address).
+  "name": "invitation-studio",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./READY-TO-UPLOAD/sales-website" }
+}

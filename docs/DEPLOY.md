@@ -25,3 +25,16 @@ For the **sales website** see `docs/LANDING-PAGE.md` (upload `READY-TO-UPLOAD/sa
    - **"This is a source folder" notice** -> you uploaded a source folder (`landing-site`, `clients`, ...). Upload the folder from `READY-TO-UPLOAD`.
    - **404 / "Not found"** -> `index.html` is not at the top of what you uploaded (you uploaded a parent folder, a zip, or a folder without a build). Open the folder you upload: it must show `index.html` directly.
 5. To update later: rebuild, then upload the same folder again as a new deployment (Pages keeps the same address).
+
+## Cloudflare with Git (automatic deploys)
+Cloudflare builds the site itself every time you push to the connected repository. Settings (Workers & Pages -> your project -> Settings -> Build):
+| Setting | Value |
+|---|---|
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+| Root directory | leave empty (the folder that holds `package.json`) |
+
+The repository must contain `wrangler.jsonc` (included) and **not** the generated folder `READY-TO-UPLOAD` (it is in `.gitignore` on purpose: Cloudflare creates it during the build).
+`npm run build` with no name builds every couple and the sales website into `READY-TO-UPLOAD`. `npm run build -- <couple-name>` still builds just one couple.
+If your project is a **Pages** project instead of a Worker, set "Build output directory" to `READY-TO-UPLOAD/sales-website` and leave out the deploy command.
+If the build log says `Usage: node engine/build/build.mjs <client-name>...` your `package.json` is an older copy: its `build` script must be `node engine/build/cli.mjs` (and `engine/build/cli.mjs` must exist).
