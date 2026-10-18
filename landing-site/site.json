@@ -1,0 +1,319 @@
+{
+  "_help": "Edit this file, then run: npm run build:site. Keys starting with _ are ignored. Fill in contact.whatsapp (country code + number, digits only), your brand name and your prices. Text marked as a promise (delivery, edits, how long the link stays online) is a placeholder: change it to what you really offer. Prices are suggested starting points (see docs/LANDING-PAGE.md): change them any time.",
+  "lang": "en",
+  "brand": {
+    "name": "Invitation Studio",
+    "tagline": "Animated wedding invitations"
+  },
+  "contact": {
+    "whatsapp": "917710203019",
+    "whatsappDisplay": "",
+    "email": "",
+    "instagram": ""
+  },
+  "siteUrl": "https://invitation-studio.officialdeskflow.workers.dev",
+  "seo": {
+    "title": "Animated wedding invitations for WhatsApp | Invitation Studio",
+    "description": "Beautiful animated wedding invitations that open on your guests' phones: countdown, map, music and RSVPs in your own Google Sheet. See live demos and book on WhatsApp.",
+    "noindex": false,
+    "ogImage": "previews/og.jpg"
+  },
+  "nav": {
+    "cta": "Book on WhatsApp"
+  },
+  "hero": {
+    "eyebrow": "Digital wedding invitations",
+    "titleBefore": "Invitations that",
+    "titleEm": "open",
+    "titleAfter": "like a gift.",
+    "lead": "Animated cards made for your guests' phones: a countdown, the schedule, a map link and RSVPs that land in your own Google Sheet. One link, shared on WhatsApp.",
+    "primary": "Book on WhatsApp",
+    "secondary": "See live demos"
+  },
+  "highlights": [
+    {
+      "title": "No app to install",
+      "text": "Guests open one link in their phone browser."
+    },
+    {
+      "title": "RSVPs in your own sheet",
+      "text": "Every reply arrives in a Google Sheet you own."
+    },
+    {
+      "title": "Countdown, map and music",
+      "text": "Everything a wedding card needs, built in."
+    }
+  ],
+  "demos": {
+    "eyebrow": "Live demos",
+    "title": "Two designs, ready to open",
+    "lead": "Tap a demo to open the real invitation, exactly as your guests will see it.",
+    "items": [
+      {
+        "client": "gursewak-simran",
+        "path": "royal-maroon-gold",
+        "previewUrl": "https://claude.ai/artifact/PL1D2W3ozAbirBh3N31jPp",
+        "name": "Royal Maroon & Gold",
+        "mood": "Rich, traditional, celebratory",
+        "blurb": "A wax-sealed envelope that opens onto maroon and gold, with torn-paper sections, gold line art and fine florals. Made for grand Punjabi and North Indian weddings.",
+        "swatches": [
+          "#5a1021",
+          "#d7a84f",
+          "#fff7e7"
+        ],
+        "images": [
+          "royal-gate",
+          "royal-hero",
+          "royal-mid"
+        ],
+        "points": [
+          "Tap-the-seal envelope opening",
+          "Gurmukhi-ready typography",
+          "Floral and mandap artwork"
+        ]
+      },
+      {
+        "client": "kabir-anaya",
+        "path": "sage-garden",
+        "previewUrl": "https://claude.ai/artifact/JGmN3x676JvCzmqzpm6RHf",
+        "name": "Sage Garden",
+        "mood": "Fresh, modern, garden-soft",
+        "blurb": "A lotus that blooms into a lifting scalloped curtain, with an illustrated couple, ring countdown and polaroid gallery. Light, airy and unmistakably contemporary.",
+        "swatches": [
+          "#3b5645",
+          "#c4745a",
+          "#f6f1e7"
+        ],
+        "images": [
+          "sage-gate",
+          "sage-hero",
+          "sage-mid"
+        ],
+        "points": [
+          "Lotus-bloom opening",
+          "Illustrated couple or your photos",
+          "Ring countdown and vine timeline"
+        ]
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "From your details to your guests' phones",
+    "steps": [
+      {
+        "title": "Share your details",
+        "text": "Names, date, events, venue and three photos. A short questionnaire covers everything."
+      },
+      {
+        "title": "Approve a private preview",
+        "text": "You receive a private link to check every detail and ask for changes."
+      },
+      {
+        "title": "Send one link",
+        "text": "Share it on WhatsApp or Instagram. It opens on any phone, no app needed."
+      },
+      {
+        "title": "Watch the replies arrive",
+        "text": "RSVPs fill a Google Sheet that belongs to you, with names, answers and guest counts."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "On every invitation",
+    "title": "Everything a wedding card needs",
+    "items": [
+      {
+        "icon": "spark",
+        "title": "A memorable opening",
+        "text": "A tap-to-open moment that makes guests smile before they read a word."
+      },
+      {
+        "icon": "clock",
+        "title": "Live countdown",
+        "text": "Days, hours, minutes and seconds to the celebration."
+      },
+      {
+        "icon": "list",
+        "title": "Event schedule",
+        "text": "Up to eight events, with times and places, laid out clearly."
+      },
+      {
+        "icon": "pin",
+        "title": "Map link",
+        "text": "One tap opens the venue in Google Maps."
+      },
+      {
+        "icon": "mail",
+        "title": "RSVP to your sheet",
+        "text": "Guests reply on the card; you see answers instantly in Google Sheets."
+      },
+      {
+        "icon": "note",
+        "title": "Your song",
+        "text": "Optional background music with a simple pause button."
+      },
+      {
+        "icon": "image",
+        "title": "Photo gallery",
+        "text": "Your portraits framed beautifully, or illustrated art if you prefer."
+      },
+      {
+        "icon": "link",
+        "title": "A link made to share",
+        "text": "Looks right in WhatsApp, with your title and a preview picture."
+      }
+    ]
+  },
+  "planners": {
+    "eyebrow": "For wedding planners",
+    "title": "Planning several weddings this season?",
+    "text": "Offer your couples a card that matches the standard of your events. Planner rates are available for repeat bookings.",
+    "cta": "Ask about planner rates"
+  },
+  "pricing": {
+    "eyebrow": "Packages",
+    "title": "Choose what fits your celebration",
+    "lead": "Every package includes a private preview before you share anything.",
+    "askLabel": "Price on request",
+    "cta": "Choose this package",
+    "items": [
+      {
+        "name": "Classic",
+        "tagline": "Everything you need",
+        "price": "₹3,999",
+        "unit": "one invitation",
+        "featured": false,
+        "features": [
+          "Your choice of either design",
+          "Countdown, schedule, map and gallery",
+          "RSVPs to your Google Sheet",
+          "A private shareable link"
+        ]
+      },
+      {
+        "name": "Signature",
+        "tagline": "The complete experience",
+        "price": "₹6,999",
+        "unit": "one invitation",
+        "featured": true,
+        "features": [
+          "Everything in Classic",
+          "Your song with a play button",
+          "Punjabi or Hindi wording",
+          "WhatsApp link preview with your picture"
+        ]
+      },
+      {
+        "name": "Planner",
+        "tagline": "For repeat bookings",
+        "price": "₹2,999",
+        "unit": "per card, 5 or more",
+        "featured": false,
+        "features": [
+          "Made for planners booking several weddings",
+          "Volume rates",
+          "Same designs, quick repeat orders"
+        ]
+      }
+    ]
+  },
+  "testimonials": [],
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Good to know",
+    "items": [
+      {
+        "q": "How do guests open the invitation?",
+        "a": "They tap the link you send on WhatsApp. It opens in the phone's browser with no app and no login. They tap the seal or lotus, then scroll through the card."
+      },
+      {
+        "q": "Will it work on every phone?",
+        "a": "It works on current iPhones and Android phones, and on computers. If a phone has Reduce Motion switched on, the card still works with calmer animations."
+      },
+      {
+        "q": "Where do the RSVPs go?",
+        "a": "Into a Google Sheet that you own. Each reply shows the guest's name, answer, number of guests and any note."
+      },
+      {
+        "q": "Can strangers find the invitation online?",
+        "a": "No. Invitation links are hidden from search engines, so only the people you send the link to will find it."
+      },
+      {
+        "q": "Can we use our own photos and music?",
+        "a": "Yes. Send three portrait photos you have permission to use. For music, send the song you would like and confirm you have the right to use it."
+      },
+      {
+        "q": "Can something be changed after I approve?",
+        "a": "Yes. After you approve, message us what to change and we will update the same link."
+      },
+      {
+        "q": "How long does the link stay online?",
+        "a": "The link stays live well after the wedding. Ask us when you book and we will confirm the exact period."
+      }
+    ]
+  },
+  "book": {
+    "eyebrow": "Book your card",
+    "title": "Tell us about your wedding",
+    "text": "Fill in the details and we will open WhatsApp with your message ready to send. Nothing is stored on this website.",
+    "labels": {
+      "names": "Your names",
+      "namesPh": "e.g. Rohan & Meera",
+      "date": "Wedding date",
+      "style": "Design",
+      "notes": "Anything else?",
+      "notesPh": "Language, music, number of events...",
+      "submit": "Continue on WhatsApp",
+      "any": "Not sure yet"
+    },
+    "messageIntro": "Hello! I would like a wedding invitation."
+  },
+  "footer": {
+    "note": "Invitation links are private and hidden from search engines."
+  },
+  "fonts": [
+    {
+      "family": "Cormorant Garamond",
+      "weight": 400,
+      "style": "normal",
+      "file": "cormorant-garamond-latin-400-normal.woff2"
+    },
+    {
+      "family": "Cormorant Garamond",
+      "weight": 400,
+      "style": "italic",
+      "file": "cormorant-garamond-latin-400-italic.woff2"
+    },
+    {
+      "family": "Cormorant Garamond",
+      "weight": 500,
+      "style": "normal",
+      "file": "cormorant-garamond-latin-500-normal.woff2"
+    },
+    {
+      "family": "Cormorant Garamond",
+      "weight": 600,
+      "style": "normal",
+      "file": "cormorant-garamond-latin-600-normal.woff2"
+    },
+    {
+      "family": "Jost",
+      "weight": 300,
+      "style": "normal",
+      "file": "jost-latin-300-normal.woff2"
+    },
+    {
+      "family": "Jost",
+      "weight": 400,
+      "style": "normal",
+      "file": "jost-latin-400-normal.woff2"
+    },
+    {
+      "family": "Jost",
+      "weight": 500,
+      "style": "normal",
+      "file": "jost-latin-500-normal.woff2"
+    }
+  ]
+}

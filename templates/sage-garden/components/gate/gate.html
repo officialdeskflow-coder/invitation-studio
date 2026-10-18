@@ -1,0 +1,8 @@
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="{{gate.ariaLabel}}">
+ <svg class="g-rings" viewBox="-150 -150 300 300" aria-hidden="true"><circle class="r1" r="148" stroke-dasharray="2 7"/><circle class="r2" r="124" stroke-dasharray="22 10 4 10"/><circle class="r3" r="98" stroke-dasharray="1 5"/></svg>
+ <p class="g-top">{{gate.topLine}}</p>
+ <p class="g-names">{{couple.first}} <i>{{couple.joiner}}</i> {{couple.second}}</p>
+ <button class="lotus" id="openBtn" type="button" aria-label="{{gate.openLabel}}"><span class="glow" id="glow"></span><svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">{{{svg.lotus}}}</svg></button>
+ <p class="hint" id="hint" aria-hidden="true">{{gate.hint}}</p>
+ <svg class="g-scal" viewBox="0 0 390 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0{{{svg.gateScallop}}}V0Z"/></svg>
+</div>

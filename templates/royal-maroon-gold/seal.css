@@ -1,0 +1,6 @@
+/* wax-seal parts shared by the gate and the RSVP seal */
+.glow{position:absolute;inset:-60%;border-radius:50%;background:radial-gradient(circle,#ffe2a0cc,#ffb84d44 40%,transparent 68%);opacity:0;scale:.4;pointer-events:none}
+.sh{position:absolute;inset:0;width:100%;height:100%}
+.sl{clip-path:inset(0 50% 0 0)}
+.sr{clip-path:inset(0 0 0 50%)}
+.sk{position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4px 0 0 -4px;background:#d7a84f;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);pointer-events:none}

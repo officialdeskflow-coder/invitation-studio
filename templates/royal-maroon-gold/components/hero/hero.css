@@ -1,0 +1,21 @@
+/* hero component */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:64px 28px 190px;background:radial-gradient(ellipse at 50% 30%,#7a1830,var(--m) 66%)}
+.hero>*{position:relative;z-index:1}
+.pa{font:400 17px/1.4 var(--pa);color:var(--gp);margin:0 0 6px}
+.sm{font-size:15px;letter-spacing:.24em;color:var(--iv);opacity:.9;margin:0 0 10px;text-transform:none}
+h1{margin:6px 0 14px;font:400 clamp(46px,14.5vw,60px)/.95 var(--script);color:var(--gp);text-shadow:0 2px 20px #0006}
+h1 i{display:block;font-size:.5em;line-height:1;color:var(--g);font-style:normal;margin:.1em 0}
+.date{font-size:20px;letter-spacing:.2em;margin:8px 0 18px}
+.div{width:150px;height:18px;color:var(--g);fill:none;stroke:currentColor;stroke-width:1}
+.cue{margin-top:34px;font-size:14px;letter-spacing:.2em;color:var(--gp)}
+.cue i{display:block;margin:8px auto 0;width:1px;height:34px;background:linear-gradient(var(--g),transparent)}
+.br{position:absolute;z-index:0;top:14%;width:25%;height:68%;fill:none;stroke:var(--g);stroke-width:1.15;stroke-linejoin:round;overflow:visible}
+.brl{left:-2%}
+.brr{right:-2%;transform:scaleX(-1)}
+.js .draw{stroke-dasharray:1;stroke-dashoffset:1;stroke-linecap:butt;opacity:0}
+.sp{position:absolute;z-index:0;width:14px;height:14px;fill:var(--gp);opacity:0}
+.hero.on .sp{animation:tw 3.4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.1;transform:scale(.6)}50%{opacity:.95;transform:scale(1)}}
+.js .hi{opacity:0;transform:translateY(16px)}
+.hB{width:56%;right:-14%;bottom:-70px}
+.hD{width:30%;left:-9%;bottom:-52px}

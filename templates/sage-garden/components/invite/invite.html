@@ -1,0 +1,7 @@
+<section class="inv" id="inv" aria-labelledby="invt">
+  <div class="mono rv"><span class="wr">{{{svg.wreath}}}</span><b>{{couple.initials}}</b></div>
+  <p class="bl rv">{{invite.blessing}}</p>
+  <h2 id="invt" class="rv h2">{{invite.title}}</h2>
+  {{#each invite.paragraphs}}<p class="rv">{{this}}</p>
+  {{/each}}<div class="dtl rv"><div><small>{{invite.whenLabel}}</small><span>{{date.long}}</span></div><hr><div><small>{{invite.whereLabel}}</small><span>{{invite.where}}</span></div></div>
+ </section>

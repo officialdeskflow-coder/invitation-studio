@@ -1,0 +1,22 @@
+{
+  "name": "invitation-studio",
+  "version": "1.5.1",
+  "private": true,
+  "description": "Animated wedding invitation templates: one config file per couple, one command to build.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node engine/build/build.mjs",
+    "build:all": "node engine/build/build.mjs --all",
+    "build:single": "node engine/build/build.mjs --single-file",
+    "test": "node engine/build/lint.mjs",
+    "new:client": "node engine/build/new-client.mjs",
+    "new:template": "node engine/build/new-template.mjs",
+    "backup": "node engine/build/backup.mjs",
+    "backup:full": "node engine/build/backup.mjs --with-built",
+    "build:site": "node engine/build/build-site.mjs",
+    "build:everything": "node engine/build/build.mjs --all && node engine/build/build-site.mjs"
+  }
+}

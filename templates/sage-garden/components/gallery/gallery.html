@@ -1,0 +1,5 @@
+<section class="gal" id="gal" aria-labelledby="gt">
+  <h2 id="gt" class="rv h2">{{gallery.title}}</h2>{{#if gallery.subtitle}}<p class="gs rv">{{gallery.subtitle}}</p>{{/if}}
+  <div class="album{{#if gallery.photos.1}}{{else}} solo{{/if}}"><figure class="pol p1" data-r="-4"><i class="tape" aria-hidden="true"></i><img src="{{img:gallery.photos.0}}" width="500" height="667" alt="{{gallery.alts.0}}" decoding="async"></figure>{{#if gallery.photos.1}}<figure class="pol p2" data-r="3.5"><i class="tape" aria-hidden="true"></i><img src="{{img:gallery.photos.1}}" width="500" height="667" alt="{{gallery.alts.1}}" decoding="async"></figure>{{/if}}</div>
+  {{#if gallery.caption}}<p class="cap rv">{{gallery.caption}}</p>{{/if}}
+ </section>

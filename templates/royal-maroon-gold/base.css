@@ -1,0 +1,19 @@
+/* base: tokens, reset, shared ornaments */
+:root{--m:#5a1021;--md:#250811;--iv:#fff7e7;--g:#d7a84f;--gp:#f3d790;--w:min(300px,78vw);--script:"InviScript","Snell Roundhand",cursive;--serif:"Cormorant Garamond",Georgia,serif;--pa:"Noto Serif Gurmukhi",serif}
+@supports (height:1svh){:root{--w:min(300px,78vw,43svh)}}
+*{box-sizing:border-box}
+h1,h2{text-wrap:balance}
+html{background:var(--md)}
+html.locked{overflow:hidden}
+body{margin:0;background:radial-gradient(ellipse at 50% 0,#3a0c18,var(--md) 70%);color:var(--iv);font-family:var(--serif);-webkit-text-size-adjust:100%}
+.col{position:relative;max-width:430px;margin:auto;background:var(--m);box-shadow:0 0 80px #0008;overflow-x:hidden;overflow-x:clip}
+:focus-visible{outline:2px solid var(--gp);outline-offset:4px}
+.open{font:500 15px/1 var(--serif);letter-spacing:.16em;color:var(--gp);background:transparent;border:1px solid var(--g);padding:16px 26px;min-height:48px;cursor:pointer;touch-action:manipulation}
+.open:hover{background:var(--g);color:var(--md)}
+.cn{position:absolute;width:44px;height:44px;fill:none;stroke:#b98a2e;stroke-width:1.2}
+.c1{top:-1px;left:-1px}
+.c2{top:-1px;right:-1px;transform:scaleX(-1)}
+.c3{bottom:-1px;left:-1px;transform:scaleY(-1)}
+.c4{bottom:-1px;right:-1px;transform:scale(-1)}
+.div2{display:block;width:150px;height:18px;margin:16px auto;fill:none;stroke:#b98a2e;stroke-width:1}
+.js .rv{opacity:0}

@@ -1,0 +1,10 @@
+{
+ "scallop": {
+  "dark": "<svg class=\"edge sc to-dark\" viewBox=\"0 0 390 24\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path class=\"ef\" d=\"M0 24a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0V24Z\"/><path class=\"cl\" pathLength=\"1\" d=\"M0 24a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0\"/></svg>",
+  "light": "<svg class=\"edge sc to-light\" viewBox=\"0 0 390 24\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path class=\"ef\" d=\"M0 24a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0V24Z\"/><path class=\"cl\" pathLength=\"1\" d=\"M0 24a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0a19.5 19.5 0 0 1 39.0 0\"/></svg>"
+ },
+ "arcade": {
+  "dark": "<svg class=\"edge ar to-dark\" viewBox=\"0 0 390 56\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path class=\"ef\" d=\"M0 56a65 54 0 0 1 130 0a65 54 0 0 1 130 0a65 54 0 0 1 130 0V56Z\"/><path class=\"cl\" pathLength=\"1\" d=\"M0 56a65 54 0 0 1 130 0a65 54 0 0 1 130 0a65 54 0 0 1 130 0\"/></svg>",
+  "light": "<svg class=\"edge ar to-light\" viewBox=\"0 0 390 56\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path class=\"ef\" d=\"M0 56a65 54 0 0 1 130 0a65 54 0 0 1 130 0a65 54 0 0 1 130 0V56Z\"/><path class=\"cl\" pathLength=\"1\" d=\"M0 56a65 54 0 0 1 130 0a65 54 0 0 1 130 0a65 54 0 0 1 130 0\"/></svg>"
+ }
+}

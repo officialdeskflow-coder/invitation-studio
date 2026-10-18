@@ -1,0 +1,7 @@
+.gal{background:var(--cream);padding:24px 20px 52px;text-align:center;margin-top:-1px}.gal h2{margin:0;color:var(--green-d)}
+.gs{margin:10px 0 0;font:italic 18px var(--serif);color:var(--terra)}
+.album{margin-top:34px}
+.pol{position:relative;width:70%;margin:0 auto;background:#fff;padding:10px 10px 40px;box-shadow:0 16px 34px #2f3a3326}.pol img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.p1{margin-left:3%}.p2{margin:-38px 3% 0 auto}.album.solo .p1{margin:0 auto}
+.tape{position:absolute;top:-13px;left:50%;width:88px;height:26px;margin-left:-44px;background:#c9d6c2cc;transform:rotate(-3deg)}.p2 .tape{transform:rotate(4deg);background:#f4d9cdcc}
+.cap{margin:34px 0 0;font:italic 24px/1.25 var(--serif);color:var(--green-d)}

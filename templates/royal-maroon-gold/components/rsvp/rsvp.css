@@ -1,0 +1,23 @@
+/* rsvp component */
+.rsvp{background:var(--iv);color:var(--m);padding:44px 22px 44px;margin-top:-1px;text-align:center}
+.rsvp h2{font:400 clamp(38px,11.5vw,48px)/1 var(--script);margin:0}
+.rp{font-size:19px;line-height:1.5;margin:12px 0 0}
+.rseal{position:relative;display:block;width:136px;aspect-ratio:1;margin:30px auto 0;padding:0;border:0;background:none;cursor:pointer;filter:drop-shadow(0 8px 12px #5a102166);touch-action:manipulation}
+.rsvp :focus-visible{outline-color:#7a1830}
+.tap{font-size:15px;font-style:italic;color:#7a1830;margin:14px 0 0}
+.js .rform{display:none}
+.rform.shown{display:flex}
+html:not(.js) .rseal,html:not(.js) .tap{display:none}
+.rform{flex-direction:column;gap:20px;text-align:left;margin-top:30px}
+.fld{display:flex;flex-direction:column;gap:6px}
+.fld label{font-size:15px;letter-spacing:.08em;color:#7a1830}
+.fld input,.fld select,.fld textarea{font:inherit;font-size:17px;color:var(--m);background:transparent;border:0;border-bottom:1px solid #b98a2e;border-radius:0;padding:12px 2px;min-height:48px;width:100%}
+.fld textarea{min-height:84px;resize:vertical}
+.fld select{appearance:none;-webkit-appearance:none;background:linear-gradient(45deg,transparent 50%,#b98a2e 50%) calc(100% - 12px) 50%/6px 6px no-repeat,linear-gradient(135deg,#b98a2e 50%,transparent 50%) calc(100% - 6px) 50%/6px 6px no-repeat}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.sub{align-self:center;font:500 16px var(--serif);letter-spacing:.16em;color:var(--gp);background:var(--m);border:1px solid var(--m);padding:16px 30px;min-height:50px;cursor:pointer}
+.sub:disabled{opacity:.6;cursor:default}
+.rst{min-height:24px;text-align:center;font-size:17px;margin:0}
+.rst[data-s=error]{color:#a3122a}
+.rst[data-s=ok]{color:#2f5d2a}
+.rnote{text-align:center;font-size:14px;opacity:.7;margin:0}

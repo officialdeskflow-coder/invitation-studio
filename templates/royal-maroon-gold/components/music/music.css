@@ -1,0 +1,6 @@
+/* optional background-music toggle */
+.snd{position:fixed;z-index:28;left:max(14px,env(safe-area-inset-left));bottom:max(14px,env(safe-area-inset-bottom));width:44px;height:44px;border:1px solid var(--g);border-radius:50%;background:#250811dd;display:flex;align-items:flex-end;justify-content:center;gap:3px;padding:13px 0;cursor:pointer;touch-action:manipulation}
+.snd[hidden]{display:none}.snd i{display:block;width:3px;height:6px;background:var(--gp);transform-origin:50% 100%}
+.snd.on i{animation:eq 1s ease-in-out infinite}.snd.on i:nth-child(2){animation-delay:-.4s}.snd.on i:nth-child(3){animation-delay:-.7s}
+@keyframes eq{0%,100%{transform:scaleY(.5)}50%{transform:scaleY(2.4)}}
+html.calm .snd.on i{animation:none}

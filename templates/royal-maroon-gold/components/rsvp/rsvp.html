@@ -1,0 +1,16 @@
+<section class="rsvp" id="rsvp" aria-labelledby="rt">
+  <h2 id="rt" class="rv">{{rsvp.title}}</h2>
+  <p class="rp rv">{{rsvp.intro}}</p>
+  <button class="rseal rv" id="rseal" type="button" aria-controls="rform" aria-expanded="false" aria-label="{{rsvp.sealAria}}"><span class="glow" id="rglow"></span><svg class="sh sl" viewBox="0 0 120 120" aria-hidden="true">{{{svg.sealRsvp.0}}}</svg><svg class="sh sr" viewBox="0 0 120 120" aria-hidden="true">{{{svg.sealRsvp.1}}}</svg></button>
+  <p class="tap rv" id="tap">{{rsvp.tap}}</p>
+  <form class="rform" id="rform" tabindex="-1" novalidate aria-describedby="rst rnote">
+   <div class="fld"><label for="rname">{{rsvp.fields.name}}</label><input id="rname" name="guestName" autocomplete="name" maxlength="80" placeholder="{{rsvp.fields.namePlaceholder}}" required></div>
+   <div class="fld"><label for="ratt">{{rsvp.fields.attend}}</label><select id="ratt" name="attendance" required><option value="">{{rsvp.fields.chooseOne}}</option><option value="yes">{{rsvp.fields.yes}}</option><option value="no">{{rsvp.fields.no}}</option></select></div>
+   <div class="fld"><label for="rg">{{rsvp.fields.guests}}</label><select id="rg" name="guestCount">{{#each rsvp.guestOptions}}<option value="{{value}}">{{label}}</option>{{/each}}</select></div>
+   <div class="fld"><label for="rmsg">{{rsvp.fields.message}}</label><textarea id="rmsg" name="message" maxlength="500" rows="3"></textarea></div>
+   <div class="hp" aria-hidden="true"><label for="rweb">{{rsvp.fields.honeypot}}</label><input id="rweb" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+   <button class="sub" id="rsub" type="submit">{{rsvp.messages.sendBtn}}</button>
+   <p class="rst" id="rst" aria-live="polite"></p>
+   <p class="rnote" id="rnote">{{rsvp.noteText}}</p>
+  </form>
+ </section>

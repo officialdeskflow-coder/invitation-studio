@@ -1,0 +1,11 @@
+<section class="cd" id="cd" aria-labelledby="cdt">
+  <h2 id="cdt" class="rv h2">{{countdown.title}}</h2>
+  <p class="vh" id="cdsr"></p>
+  <div class="rings" aria-hidden="true">
+   <div class="rg rv"><svg viewBox="0 0 100 100"><circle class="bgc" cx="50" cy="50" r="46"/><circle class="fgc" id="r-d" cx="50" cy="50" r="46"/></svg><span class="num" id="n-d"><b>---</b></span><span class="lab">{{countdown.labels.days}}</span></div>
+   <div class="rg rv"><svg viewBox="0 0 100 100"><circle class="bgc" cx="50" cy="50" r="46"/><circle class="fgc" id="r-h" cx="50" cy="50" r="46"/></svg><span class="num" id="n-h"><b>--</b></span><span class="lab">{{countdown.labels.hours}}</span></div>
+   <div class="rg rv"><svg viewBox="0 0 100 100"><circle class="bgc" cx="50" cy="50" r="46"/><circle class="fgc" id="r-m" cx="50" cy="50" r="46"/></svg><span class="num" id="n-m"><b>--</b></span><span class="lab">{{countdown.labels.minutes}}</span></div>
+   <div class="rg rv"><svg viewBox="0 0 100 100"><circle class="bgc" cx="50" cy="50" r="46"/><circle class="fgc" id="r-s" cx="50" cy="50" r="46"/></svg><span class="num" id="n-s"><b>--</b></span><span class="lab">{{countdown.labels.seconds}}</span></div>
+  </div>
+  <p class="today" id="today" hidden>{{countdown.today}}</p>
+ </section>

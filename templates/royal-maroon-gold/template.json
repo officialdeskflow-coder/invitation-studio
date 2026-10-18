@@ -1,0 +1,124 @@
+{
+ "id": "royal-maroon-gold",
+ "name": "Royal Maroon & Gold",
+ "version": "1.0.0",
+ "description": "Envelope-and-wax-seal opening, torn-paper and curved sections, gold line-art, floral cut-outs, Gurmukhi-ready.",
+ "page": "page.html",
+ "fonts": [
+  {
+   "family": "InviScript",
+   "weight": 400,
+   "style": "normal",
+   "file": "shared:fonts/dancing-script-latin-600-normal.woff2"
+  },
+  {
+   "family": "Cormorant Garamond",
+   "weight": 400,
+   "style": "normal",
+   "file": "shared:fonts/cormorant-garamond-latin-400-normal.woff2"
+  },
+  {
+   "family": "Cormorant Garamond",
+   "weight": 400,
+   "style": "italic",
+   "file": "shared:fonts/cormorant-garamond-latin-400-italic.woff2"
+  },
+  {
+   "family": "Cormorant Garamond",
+   "weight": 500,
+   "style": "normal",
+   "file": "shared:fonts/cormorant-garamond-latin-500-normal.woff2"
+  },
+  {
+   "family": "Cormorant Garamond",
+   "weight": 600,
+   "style": "normal",
+   "file": "shared:fonts/cormorant-garamond-latin-600-normal.woff2"
+  },
+  {
+   "family": "Noto Serif Gurmukhi",
+   "weight": 400,
+   "style": "normal",
+   "file": "shared:fonts/noto-serif-gurmukhi-gurmukhi-400-normal.woff2"
+  }
+ ],
+ "css": {
+  "order": [
+   "base.css",
+   "seal.css",
+   "motion.css",
+   "edges.css",
+   "@gate",
+   "@sections",
+   "@optional",
+   "florals.css"
+  ]
+ },
+ "vendor": [
+  "shared:vendor/gsap.min.js",
+  "shared:vendor/ScrollTrigger.min.js"
+ ],
+ "gate": "gate",
+ "sections": [
+  {
+   "id": "hero",
+   "tone": "dark",
+   "required": true
+  },
+  {
+   "id": "invite",
+   "tone": "light",
+   "required": true,
+   "edge": "torn"
+  },
+  {
+   "id": "countdown",
+   "tone": "dark",
+   "edge": "curve"
+  },
+  {
+   "id": "schedule",
+   "tone": "light",
+   "edge": "curve"
+  },
+  {
+   "id": "venue",
+   "tone": "dark",
+   "edge": "torn"
+  },
+  {
+   "id": "gallery",
+   "tone": "light",
+   "edge": "torn"
+  },
+  {
+   "id": "rsvp",
+   "tone": "light",
+   "edge": "torn"
+  },
+  {
+   "id": "closing",
+   "tone": "dark",
+   "required": true,
+   "edge": "torn"
+  }
+ ],
+ "optionalComponents": [
+  {
+   "id": "music",
+   "when": "music.src"
+  }
+ ],
+ "requiredIds": [
+  "gate",
+  "openBtn",
+  "hero",
+  "names",
+  "inv",
+  "clo"
+ ],
+ "js": {
+  "core": "shared:js/core.js",
+  "boot": "shared:js/boot.js"
+ }
+}

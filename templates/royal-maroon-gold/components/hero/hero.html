@@ -1,0 +1,15 @@
+<section class="hero" id="hero" aria-labelledby="names">
+  <svg class="br brl" viewBox="0 0 120 400" aria-hidden="true">{{{svg.branch}}}</svg>
+  <svg class="br brr" viewBox="0 0 120 400" aria-hidden="true">{{{svg.branch}}}</svg>
+  <svg class="sp" style="top:12%;left:22%" viewBox="0 0 24 24"><use href="#spark"/></svg>
+  <svg class="sp" style="top:30%;right:16%;animation-delay:-1.2s" viewBox="0 0 24 24"><use href="#spark"/></svg>
+  <svg class="sp" style="top:62%;left:14%;animation-delay:-2.2s" viewBox="0 0 24 24"><use href="#spark"/></svg>
+  <svg class="sp" style="top:80%;right:24%;animation-delay:-.6s" viewBox="0 0 24 24"><use href="#spark"/></svg>
+  <div class="flr fB hfl hB" aria-hidden="true"></div><div class="flr fD hfl hD" aria-hidden="true"></div>
+  {{#if hero.pa}}<p class="pa hi" lang="{{hero.paLang}}">{{hero.pa}}</p>{{/if}}
+  <p class="sm hi">{{hero.kicker}}</p>
+  <h1 id="names" class="hi" tabindex="-1">{{couple.first}}<i>{{couple.joiner}}</i>{{couple.second}}</h1>
+  <p class="date hi">{{date.display}}</p>
+  <svg class="div hi" viewBox="0 0 200 24" aria-hidden="true"><use href="#divider"/></svg>
+  <p class="cue hi">{{hero.scroll}}<i></i></p>
+ </section>

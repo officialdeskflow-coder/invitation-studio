@@ -1,0 +1,2 @@
+gsap 3.12.5 (core + ScrollTrigger), copied from the npm package "gsap".
+Check the current GSAP licence at https://gsap.com/standard-license before reselling.

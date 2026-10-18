@@ -1,0 +1,148 @@
+{
+ "lang": "en",
+ "theme": {
+  "color": "#250811"
+ },
+ "seo": {
+  "title": "${couple.first} & ${couple.second} — Wedding Invitation",
+  "description": "You are invited to the wedding of ${couple.first} and ${couple.second}.",
+  "noindex": true,
+  "url": "",
+  "ogImage": "",
+  "favicon": "💌"
+ },
+ "couple": {
+  "first": "",
+  "second": "",
+  "joiner": "&",
+  "initials": ""
+ },
+ "date": {
+  "iso": "",
+  "display": "",
+  "long": ""
+ },
+ "gate": {
+  "ariaLabel": "Wedding invitation",
+  "openLabel": "Open the wedding invitation",
+  "hint": "Tap the seal to open",
+  "cardTitle": "Wedding invitation",
+  "cardLine": "A celebration of love"
+ },
+ "hero": {
+  "pa": "",
+  "paLang": "pa",
+  "kicker": "The wedding of",
+  "scroll": "Scroll"
+ },
+ "invite": {
+  "blessing": "With the blessings of our families",
+  "title": "You are invited",
+  "paragraphs": [
+   "${couple.first} and ${couple.second} joyfully invite you to celebrate their wedding with music, blessings and a long evening together.",
+   "Your presence will make the day complete."
+  ],
+  "where": "${venue.name}"
+ },
+ "countdown": {
+  "title": "The celebration begins in",
+  "labels": {
+   "days": "Days",
+   "hours": "Hours",
+   "minutes": "Minutes",
+   "seconds": "Seconds"
+  },
+  "today": "The celebration begins today",
+  "srLabel": "{days} days until the celebration on ${date.long}"
+ },
+ "schedule": {
+  "title": "Schedule of events",
+  "events": []
+ },
+ "venue": {
+  "title": "Where we celebrate",
+  "name": "",
+  "city": "",
+  "mapQuery": "",
+  "mapLabel": "",
+  "mapUrl": "",
+  "mapButton": "Open in Maps",
+  "note": "",
+  "illustration": true,
+  "illustrationAlt": "Line drawing of the wedding mandap"
+ },
+ "gallery": {
+  "title": "Our moments",
+  "subtitle": "",
+  "caption": "",
+  "photos": [],
+  "alts": []
+ },
+ "rsvp": {
+  "title": "Kindly reply",
+  "intro": "Please let us know if you can celebrate with us.",
+  "sealAria": "Open the RSVP form",
+  "sealText": "RSVP",
+  "tap": "Tap the seal to reply",
+  "endpoint": "",
+  "maxGuests": 4,
+  "invitationId": "",
+  "fields": {
+   "name": "Your name",
+   "namePlaceholder": "Full name",
+   "attend": "Will you attend?",
+   "chooseOne": "Choose one",
+   "yes": "Joyfully accepts",
+   "no": "Regretfully declines",
+   "guests": "Number of guests",
+   "message": "A note for the couple (optional)",
+   "honeypot": "Website"
+  },
+  "messages": {
+   "sendBtn": "Send RSVP",
+   "sendingBtn": "Sending…",
+   "sending": "Sending your reply…",
+   "invalid": "Please fill in your name and your reply.",
+   "accepted": "Joyfully accepted",
+   "declined": "Regretfully declined",
+   "thanksDemo": "Thank you, {name}. Demo reply: {status}. Nothing was sent or saved.",
+   "thanksSaved": "Thank you, {name}. Your reply has been saved.",
+   "thanksDup": "Thank you, {name}. Your reply was already recorded.",
+   "noteLive": "Your reply is sent to the hosts.",
+   "noteDemo": "Demo only: nothing is sent or saved.",
+   "guestOne": "guest",
+   "guestMany": "guests",
+   "errConfig": "The RSVP service is not set up correctly.",
+   "errSecure": "The RSVP service must use a secure connection.",
+   "errTimeout": "The RSVP service took too long. Please try again.",
+   "errNetwork": "Could not reach the RSVP service. Check your connection and try again.",
+   "errUnexpected": "Unexpected reply from the RSVP service. Please try again.",
+   "errSave": "Your RSVP could not be saved.",
+   "errGeneric": "Your RSVP could not be sent. Please try again."
+  }
+ },
+ "closing": {
+  "title": "Hope to see you there",
+  "love": "With love and blessings from our families",
+  "topButton": "Back to the invitation",
+  "photo": "",
+  "photoAlt": "${couple.first} and ${couple.second}"
+ },
+ "features": {
+  "progressBar": true,
+  "motionNotice": false,
+  "motionNoticeText": "Reduce Motion is on for this device, so you are seeing calm mode. Tap for full motion."
+ },
+ "music": {
+  "src": "",
+  "labelOn": "Play music",
+  "labelOff": "Pause music"
+ },
+ "sections": {
+  "countdown": true,
+  "schedule": true,
+  "venue": true,
+  "gallery": true,
+  "rsvp": true
+ }
+}

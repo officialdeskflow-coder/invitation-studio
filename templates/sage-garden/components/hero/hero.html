@@ -1,0 +1,9 @@
+<section class="hero" id="hero" aria-labelledby="names">
+  <div class="flr hfl gl gl-l" aria-hidden="true">{{{svg.garlandLeft}}}</div><div class="flr hfl gl gl-r" aria-hidden="true">{{{svg.garlandRight}}}</div>
+  <p class="kick hi">{{hero.kicker}}</p>
+  <h1 id="names" class="hi" tabindex="-1">{{couple.first}}<i>{{couple.joiner}}</i>{{couple.second}}</h1>
+  <div class="win hi" role="img" aria-label="{{hero.imageAlt}}">{{#if hero.photo}}<img src="{{img:hero.photo}}" width="500" height="667" alt="" decoding="async">{{else}}{{{svg.couple}}}{{/if}}</div>
+  <p class="date hi">{{date.display}}</p>
+  {{#if hero.place}}<p class="place hi">{{hero.place}}</p>{{/if}}
+  <p class="cue hi">{{hero.scroll}}<i></i></p>
+ </section>

@@ -1,0 +1,20 @@
+/* closing component */
+.clo{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,#7a1830,var(--m) 72%);padding:44px 24px 72px;margin-top:-1px;text-align:center}
+.clo>*{position:relative;z-index:1}
+.clo>.sp{position:absolute;z-index:0}
+.clo h2{font:400 clamp(36px,11vw,46px)/1.05 var(--script);color:var(--gp);margin:0}
+.cn2{font:400 clamp(32px,10vw,40px)/1.1 var(--script);color:var(--iv);margin:10px 0 0}
+.arch{width:min(78%,300px);margin:28px auto 0;border:1px solid var(--g);border-bottom:0;border-radius:999px 999px 0 0;padding:6px 6px 0}
+.ph{position:relative;aspect-ratio:3/4;border-radius:999px 999px 0 0;overflow:hidden;background:#3a0c18}
+.ph>svg,.ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.ph::after{content:"";position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(transparent,var(--m))}
+.ph-note{font-size:14px;font-style:italic;opacity:.7;margin:12px 0 0}
+.love{font-size:19px;margin:6px 0 22px}
+.top{font:500 15px var(--serif);letter-spacing:.14em;color:var(--gp);background:transparent;border:1px solid var(--g);padding:14px 22px;min-height:48px;cursor:pointer}
+.top:hover{background:var(--g);color:var(--md)}
+.clo.live .sp{animation:tw 3.4s ease-in-out infinite}
+.aw{position:relative;width:min(78%,300px);margin:28px auto 0}
+.aw .arch{width:100%;margin:0}
+.cB{width:56%;left:-26%;bottom:-6%}
+.cC{width:58%;right:-26%;bottom:-4%}
+.clo .lf{position:absolute;z-index:0;top:0;width:20px;height:16px;fill:#d7a84f33;stroke:var(--g);stroke-width:1;opacity:0}

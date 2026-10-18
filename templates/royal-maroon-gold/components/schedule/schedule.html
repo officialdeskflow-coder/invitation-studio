@@ -1,0 +1,8 @@
+<section class="sch" id="sch" aria-labelledby="sct">
+  <h2 id="sct" class="rv">{{schedule.title}}</h2>
+  <ol class="tl" id="tl">
+   {{#each schedule.events}}<li class="ev"><time datetime="{{iso}}">{{time}}</time><i class="nd" aria-hidden="true"></i><div><h3>{{title}}</h3>{{#if place}}<p>{{place}}</p>{{/if}}</div></li>
+   {{/each}}   <span class="rail" aria-hidden="true"></span><span class="fill" id="fill" aria-hidden="true"></span>
+   <svg class="mk" id="mk" viewBox="0 0 24 24" aria-hidden="true"><use href="#mark"/></svg>
+  </ol>
+ </section>

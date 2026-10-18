@@ -1,0 +1,10 @@
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="{{gate.ariaLabel}}">
+ <div class="env" id="env">
+  <div class="back"></div><div class="beam" id="beam"></div><div class="icard" id="icard" aria-hidden="true"><svg class="cn c1" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner"/></svg><svg class="cn c2" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner"/></svg><svg class="cn c3" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner"/></svg><svg class="cn c4" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner"/></svg><p class="ic-t">{{gate.cardTitle}}</p><svg class="ic-m" viewBox="0 0 100 100"><use href="#mono"/></svg><svg class="ic-d" viewBox="0 0 200 24"><use href="#divider"/></svg><p class="ic-b">{{gate.cardLine}}</p></div>
+  <div class="paper pocket" id="pocket"><svg viewBox="0 0 300 420" preserveAspectRatio="none" aria-hidden="true"><path d="M0 420L150 210L300 420M0 0L150 210L300 0" vector-effect="non-scaling-stroke"/></svg></div>
+  <div class="paper fl" id="fl"><svg viewBox="0 0 300 420" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0L150 210L300 0" vector-effect="non-scaling-stroke"/></svg></div>
+  <div class="paper fr" id="fr"><svg viewBox="0 0 300 420" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0L150 210L300 0" vector-effect="non-scaling-stroke"/></svg></div>
+  <div class="sealpos"><button class="seal" id="openBtn" type="button" aria-label="{{gate.openLabel}}"><span class="glow" id="glow"></span><svg class="sh sl" viewBox="0 0 120 120" aria-hidden="true">{{{svg.sealGate.0}}}</svg><svg class="sh sr" viewBox="0 0 120 120" aria-hidden="true">{{{svg.sealGate.1}}}</svg></button></div>
+  <p class="hint" id="hint" aria-hidden="true">{{gate.hint}}</p>
+ </div>
+</div>

@@ -1,0 +1,10 @@
+/* invite component */
+.inv{background:var(--iv);color:var(--m);padding:24px 20px 44px;margin-top:-1px}
+.frame{position:relative;padding:56px 24px 46px;text-align:center;border:1px solid #d7a84f66}
+.frame p{font-size:19px;line-height:1.55;margin:0 0 12px}
+.frame .bl{font-size:17px;font-style:italic;color:#7a1830}
+.frame h2{font:400 clamp(40px,12.5vw,52px)/1 var(--script);margin:6px 0 20px}
+.frame .when{font-size:18px;letter-spacing:.06em;margin:6px 0 0}
+.inv{position:relative}
+.iA{width:28%;left:-8%;bottom:-26px}
+.iC{width:32%;right:-9%;bottom:-24px}

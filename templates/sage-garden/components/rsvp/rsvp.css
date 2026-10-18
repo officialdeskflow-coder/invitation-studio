@@ -1,0 +1,13 @@
+.rsvp{background:var(--green);color:var(--cream);padding:24px 24px 58px;text-align:center;margin-top:-1px}
+.rsvp h2{margin:0}.rp{margin:12px 0 0;font-size:17px;line-height:1.6;color:#e6eee1}
+.rseal{position:relative;width:124px;aspect-ratio:1;margin:30px auto 0;border:0;border-radius:50%;background:var(--blush-l);color:var(--green-d);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;box-shadow:0 0 0 8px #ffffff14,0 0 0 17px #ffffff0a}
+.rseal .rl{width:30px;height:30px}.rseal b{font:500 12px var(--sans);letter-spacing:.3em;margin-right:-.3em}
+.rsvp :focus-visible{outline-color:var(--gp)}.tap{margin:26px 0 0;font:italic 17px var(--serif);color:var(--blush-l)}
+.js .rform{display:none}.rform.shown{display:flex}html:not(.js) .rseal,html:not(.js) .tap{display:none}
+.rform{flex-direction:column;gap:20px;text-align:left;margin-top:30px}.fld{display:flex;flex-direction:column;gap:6px}.fld label{font:500 11px var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gp)}
+.fld input,.fld select,.fld textarea{font:inherit;font-size:17px;color:var(--cream);background:transparent;border:0;border-bottom:1px solid #c9a96a99;border-radius:0;padding:12px 2px;min-height:48px;width:100%}
+.fld input::placeholder{color:#e6eee19a}.fld textarea{min-height:84px;resize:vertical}.fld select option{color:#2f3a33}
+.fld select{appearance:none;-webkit-appearance:none;background:linear-gradient(45deg,transparent 50%,#e9d7a8 50%) calc(100% - 12px) 50%/6px 6px no-repeat,linear-gradient(135deg,#e9d7a8 50%,transparent 50%) calc(100% - 6px) 50%/6px 6px no-repeat}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.sub{align-self:center;font:500 13px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--green-d);background:var(--blush-l);border:0;border-radius:999px;padding:16px 32px;min-height:50px;cursor:pointer}.sub:disabled{opacity:.6;cursor:default}
+.rst{min-height:24px;text-align:center;font-size:17px;margin:0}.rst[data-s=error]{color:#ffc9b8}.rst[data-s=ok]{color:#d7f0c9}.rnote{text-align:center;font-size:14px;opacity:.75;margin:0}

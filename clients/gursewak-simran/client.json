@@ -1,0 +1,71 @@
+{
+  "_help": "Everything not listed here falls back to templates/royal-maroon-gold/defaults.json. See docs/ADD-A-CLIENT.md.",
+  "template": "royal-maroon-gold",
+  "couple": {
+    "first": "Gursewak",
+    "second": "Simran"
+  },
+  "date": {
+    "iso": "2027-04-17T18:30:00+05:30"
+  },
+  "hero": {
+    "pa": "ਵਿਆਹ ਦਾ ਸੱਦਾ"
+  },
+  "invite": {
+    "where": "The Saffron Haveli, Amritsar"
+  },
+  "schedule": {
+    "events": [
+      {
+        "time": "5:30 PM",
+        "title": "Mehfil welcome",
+        "place": "The Saffron Courtyard"
+      },
+      {
+        "time": "6:30 PM",
+        "title": "Anand celebration",
+        "place": "The Grand Darbar"
+      },
+      {
+        "time": "8:30 PM",
+        "title": "Feast and bhangra",
+        "place": "Moonlit Terrace"
+      },
+      {
+        "time": "10:30 PM",
+        "title": "Farewell",
+        "place": "The Haveli Gate"
+      }
+    ]
+  },
+  "venue": {
+    "name": "The Saffron Haveli",
+    "city": "Amritsar, Punjab",
+    "mapQuery": "Amritsar Punjab",
+    "mapLabel": "Amritsar",
+    "note": "Demo link opens a search for Amritsar, not a confirmed venue."
+  },
+  "gallery": {
+    "subtitle": "A few frames from the road to this day",
+    "caption": "Forever begins here",
+    "photos": [
+      "photos/couple2.webp",
+      "photos/couple3.webp"
+    ]
+  },
+  "rsvp": {
+    "endpoint": "",
+    "maxGuests": 4,
+    "invitationId": "gursewak-simran"
+  },
+  "closing": {
+    "photo": "photos/couple1.webp"
+  },
+  "seo": {
+    "noindex": true,
+    "ogImage": "photos/og.jpg"
+  },
+  "features": {
+    "motionNotice": true
+  }
+}

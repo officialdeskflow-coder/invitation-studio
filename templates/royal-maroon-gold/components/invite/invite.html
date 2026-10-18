@@ -1,0 +1,9 @@
+<section class="inv" id="inv" aria-labelledby="invt"><div class="flr fA iA" aria-hidden="true"></div><div class="flr fC iC" aria-hidden="true"></div><div class="frame">
+  <svg class="cn c1 rv" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner"/></svg><svg class="cn c2 rv" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner"/></svg><svg class="cn c3 rv" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner"/></svg><svg class="cn c4 rv" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner"/></svg>
+  <p class="bl rv">{{invite.blessing}}</p>
+  <h2 id="invt" class="rv">{{invite.title}}</h2>
+  {{#each invite.paragraphs}}<p class="rv">{{this}}</p>
+  {{/each}}
+  <svg class="div2 rv" viewBox="0 0 200 24" aria-hidden="true"><use href="#divider"/></svg>
+  <p class="when rv">{{date.long}}<br>{{invite.where}}</p>
+ </div></section>

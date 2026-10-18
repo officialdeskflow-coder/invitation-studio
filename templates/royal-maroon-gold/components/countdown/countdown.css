@@ -1,0 +1,15 @@
+/* countdown component */
+.cd{background:radial-gradient(ellipse at 50% 0,#7a1830,var(--m) 70%);padding:34px 12px 56px;text-align:center;margin-top:-1px}
+.cd h2{font:400 clamp(34px,10.5vw,44px)/1.1 var(--script);color:var(--gp);margin:0 0 26px}
+.cells{display:grid;grid-template-columns:repeat(4,1fr)}
+.cell{padding:6px 0;border-left:1px solid #d7a84f55}
+.cell:first-child{border-left:0}
+.num{position:relative;display:block;height:1.1em;overflow:hidden;font:500 clamp(36px,11.5vw,48px)/1.1 var(--serif);color:var(--iv);font-variant-numeric:lining-nums tabular-nums}
+.num b{display:block;font-weight:inherit}
+.num b.nx{position:absolute;inset:0}
+.lab{display:block;margin-top:8px;font-size:14px;letter-spacing:.14em;color:var(--gp)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.today{font:400 28px var(--script);color:var(--gp);margin:22px 0 0}
+.cd{background:var(--m);position:relative;padding-top:20px}
+.cd::before{content:"";position:absolute;inset:14% 0 0;background:radial-gradient(ellipse at 50% 30%,#7a1830aa,transparent 70%);pointer-events:none}
+.cd>*{position:relative}

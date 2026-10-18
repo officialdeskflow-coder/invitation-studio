@@ -1,0 +1,6 @@
+/* floral cut-outs (positions live in each component) */
+.flr{position:absolute;z-index:2;pointer-events:none;background:center/contain no-repeat}
+.fA{background-image:url({{tpl:florals/flowerA.webp}});aspect-ratio:440/554}
+.fB{background-image:url({{tpl:florals/flowerB.webp}});aspect-ratio:440/573}
+.fC{background-image:url({{tpl:florals/flowerC.webp}});aspect-ratio:440/435}
+.fD{background-image:url({{tpl:florals/flowerD.webp}});aspect-ratio:440/710}

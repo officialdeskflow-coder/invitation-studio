@@ -1,0 +1,154 @@
+{
+ "lang": "en",
+ "theme": {
+  "color": "#3b5645"
+ },
+ "seo": {
+  "title": "${couple.first} & ${couple.second} — Wedding Invitation",
+  "description": "You are invited to the wedding of ${couple.first} and ${couple.second}.",
+  "noindex": true,
+  "url": "",
+  "ogImage": "",
+  "favicon": "💌"
+ },
+ "couple": {
+  "first": "",
+  "second": "",
+  "joiner": "&",
+  "initials": ""
+ },
+ "date": {
+  "iso": "",
+  "display": "",
+  "long": ""
+ },
+ "gate": {
+  "ariaLabel": "Wedding invitation",
+  "openLabel": "Open the wedding invitation",
+  "hint": "Tap the lotus to open",
+  "cardTitle": "Wedding invitation",
+  "cardLine": "A celebration of love",
+  "topLine": "You are invited"
+ },
+ "hero": {
+  "pa": "",
+  "paLang": "pa",
+  "kicker": "The wedding of",
+  "scroll": "Scroll",
+  "place": "${venue.city}",
+  "imageAlt": "Illustration of ${couple.first} and ${couple.second}",
+  "photo": ""
+ },
+ "invite": {
+  "blessing": "With joy in our hearts",
+  "title": "Join us",
+  "paragraphs": [
+   "${couple.first} and ${couple.second} are getting married, and it would mean the world to celebrate with the people we love.",
+   "Come for the ceremony, stay for the music, the food and the dancing."
+  ],
+  "where": "${venue.name}",
+  "whenLabel": "When",
+  "whereLabel": "Where"
+ },
+ "countdown": {
+  "title": "Counting down to the big day",
+  "labels": {
+   "days": "Days",
+   "hours": "Hours",
+   "minutes": "Minutes",
+   "seconds": "Seconds"
+  },
+  "today": "The celebration begins today",
+  "srLabel": "{days} days until the celebration on ${date.long}"
+ },
+ "schedule": {
+  "title": "The day, hour by hour",
+  "events": []
+ },
+ "venue": {
+  "title": "The venue",
+  "name": "",
+  "city": "",
+  "mapQuery": "",
+  "mapLabel": "",
+  "mapUrl": "",
+  "mapButton": "Open in Maps",
+  "note": "",
+  "illustration": true,
+  "illustrationAlt": "Line drawing of a garden pavilion"
+ },
+ "gallery": {
+  "title": "Moments",
+  "subtitle": "",
+  "caption": "",
+  "photos": [],
+  "alts": []
+ },
+ "rsvp": {
+  "title": "Will you join us?",
+  "intro": "Let us know so we can save you a seat.",
+  "sealAria": "Open the RSVP form",
+  "sealText": "RSVP",
+  "tap": "Tap to reply",
+  "endpoint": "",
+  "maxGuests": 4,
+  "invitationId": "",
+  "fields": {
+   "name": "Your name",
+   "namePlaceholder": "Full name",
+   "attend": "Will you attend?",
+   "chooseOne": "Choose one",
+   "yes": "Joyfully accepts",
+   "no": "Regretfully declines",
+   "guests": "Number of guests",
+   "message": "A note for the couple (optional)",
+   "honeypot": "Website"
+  },
+  "messages": {
+   "sendBtn": "Send RSVP",
+   "sendingBtn": "Sending…",
+   "sending": "Sending your reply…",
+   "invalid": "Please fill in your name and your reply.",
+   "accepted": "Joyfully accepted",
+   "declined": "Regretfully declined",
+   "thanksDemo": "Thank you, {name}. Demo reply: {status}. Nothing was sent or saved.",
+   "thanksSaved": "Thank you, {name}. Your reply has been saved.",
+   "thanksDup": "Thank you, {name}. Your reply was already recorded.",
+   "noteLive": "Your reply is sent to the hosts.",
+   "noteDemo": "Demo only: nothing is sent or saved.",
+   "guestOne": "guest",
+   "guestMany": "guests",
+   "errConfig": "The RSVP service is not set up correctly.",
+   "errSecure": "The RSVP service must use a secure connection.",
+   "errTimeout": "The RSVP service took too long. Please try again.",
+   "errNetwork": "Could not reach the RSVP service. Check your connection and try again.",
+   "errUnexpected": "Unexpected reply from the RSVP service. Please try again.",
+   "errSave": "Your RSVP could not be saved.",
+   "errGeneric": "Your RSVP could not be sent. Please try again."
+  }
+ },
+ "closing": {
+  "title": "See you soon",
+  "love": "With love and gratitude",
+  "topButton": "Back to top",
+  "photo": "",
+  "photoAlt": "${couple.first} and ${couple.second}"
+ },
+ "features": {
+  "progressBar": true,
+  "motionNotice": false,
+  "motionNoticeText": "Reduce Motion is on for this device, so you are seeing calm mode. Tap for full motion."
+ },
+ "music": {
+  "src": "",
+  "labelOn": "Play music",
+  "labelOff": "Pause music"
+ },
+ "sections": {
+  "countdown": true,
+  "schedule": true,
+  "venue": true,
+  "gallery": true,
+  "rsvp": true
+ }
+}

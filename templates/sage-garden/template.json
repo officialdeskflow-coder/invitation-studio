@@ -1,0 +1,128 @@
+{
+ "id": "sage-garden",
+ "name": "Sage Garden",
+ "version": "1.0.0",
+ "description": "Lotus-bloom opening and lifting scalloped curtain, illustrated couple, sage / cream / terracotta palette, ring countdown, vine schedule, polaroid gallery. All art is original vector.",
+ "page": "page.html",
+ "fonts": [
+  {
+   "family": "Playfair Display",
+   "weight": 400,
+   "style": "normal",
+   "file": "shared:fonts/playfair-display-latin-400-normal.woff2"
+  },
+  {
+   "family": "Playfair Display",
+   "weight": 400,
+   "style": "italic",
+   "file": "shared:fonts/playfair-display-latin-400-italic.woff2"
+  },
+  {
+   "family": "Playfair Display",
+   "weight": 600,
+   "style": "italic",
+   "file": "shared:fonts/playfair-display-latin-600-italic.woff2"
+  },
+  {
+   "family": "Jost",
+   "weight": 300,
+   "style": "normal",
+   "file": "shared:fonts/jost-latin-300-normal.woff2"
+  },
+  {
+   "family": "Jost",
+   "weight": 400,
+   "style": "normal",
+   "file": "shared:fonts/jost-latin-400-normal.woff2"
+  },
+  {
+   "family": "Jost",
+   "weight": 500,
+   "style": "normal",
+   "file": "shared:fonts/jost-latin-500-normal.woff2"
+  },
+  {
+   "family": "Noto Sans Gurmukhi",
+   "weight": 400,
+   "style": "normal",
+   "file": "shared:fonts/noto-sans-gurmukhi-gurmukhi-400-normal.woff2"
+  }
+ ],
+ "css": {
+  "order": [
+   "base.css",
+   "motion.css",
+   "edges.css",
+   "@gate",
+   "@sections",
+   "@optional"
+  ]
+ },
+ "js": {
+  "core": "shared:js/core.js",
+  "boot": "shared:js/boot.js"
+ },
+ "vendor": [
+  "shared:vendor/gsap.min.js",
+  "shared:vendor/ScrollTrigger.min.js"
+ ],
+ "gate": "gate",
+ "sections": [
+  {
+   "id": "hero",
+   "tone": "light",
+   "required": true
+  },
+  {
+   "id": "invite",
+   "tone": "dark",
+   "required": true,
+   "edge": "arcade"
+  },
+  {
+   "id": "countdown",
+   "tone": "light",
+   "edge": "scallop"
+  },
+  {
+   "id": "schedule",
+   "tone": "light",
+   "edge": "scallop"
+  },
+  {
+   "id": "venue",
+   "tone": "dark",
+   "edge": "arcade"
+  },
+  {
+   "id": "gallery",
+   "tone": "light",
+   "edge": "scallop"
+  },
+  {
+   "id": "rsvp",
+   "tone": "dark",
+   "edge": "arcade"
+  },
+  {
+   "id": "closing",
+   "tone": "light",
+   "required": true,
+   "edge": "scallop"
+  }
+ ],
+ "optionalComponents": [
+  {
+   "id": "music",
+   "when": "music.src"
+  }
+ ],
+ "requiredIds": [
+  "gate",
+  "openBtn",
+  "hero",
+  "names",
+  "inv",
+  "clo"
+ ]
+}

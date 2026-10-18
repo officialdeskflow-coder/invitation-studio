@@ -1,0 +1,69 @@
+{
+  "_help": "Second template demo: fictional couple with original illustrations instead of photos.",
+  "template": "sage-garden",
+  "couple": {
+    "first": "Kabir",
+    "second": "Anaya"
+  },
+  "date": {
+    "iso": "2027-02-20T17:00:00+05:30"
+  },
+  "hero": {
+    "place": "Jaipur, Rajasthan"
+  },
+  "invite": {
+    "where": "The Lotus Pavilion, Jaipur"
+  },
+  "schedule": {
+    "events": [
+      {
+        "time": "4:00 PM",
+        "title": "Haldi in the garden",
+        "place": "Courtyard lawn"
+      },
+      {
+        "time": "6:00 PM",
+        "title": "Baraat and vows",
+        "place": "The Lotus Pavilion"
+      },
+      {
+        "time": "8:00 PM",
+        "title": "Dinner and music",
+        "place": "Marble terrace"
+      },
+      {
+        "time": "10:30 PM",
+        "title": "Late-night dance",
+        "place": "Poolside"
+      }
+    ]
+  },
+  "venue": {
+    "name": "The Lotus Pavilion",
+    "city": "Jaipur, Rajasthan",
+    "mapQuery": "Jaipur Rajasthan",
+    "mapLabel": "Jaipur",
+    "note": "Demo link opens a search for Jaipur, not a confirmed venue."
+  },
+  "gallery": {
+    "caption": "Two hearts, one home",
+    "photos": [
+      "photos/illustration-2.webp",
+      "photos/illustration-3.webp"
+    ]
+  },
+  "closing": {
+    "photo": "photos/illustration-1.webp"
+  },
+  "rsvp": {
+    "endpoint": "",
+    "maxGuests": 4,
+    "invitationId": "kabir-anaya"
+  },
+  "features": {
+    "motionNotice": true
+  },
+  "seo": {
+    "ogImage": "photos/og.jpg"
+  }
+}

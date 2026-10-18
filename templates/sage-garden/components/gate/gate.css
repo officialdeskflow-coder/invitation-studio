@@ -1,0 +1,15 @@
+.gate{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--green);color:var(--cream);text-align:center;padding:env(safe-area-inset-top) 24px env(safe-area-inset-bottom)}
+.gate::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 46%,#5d7d69,transparent 64%),repeating-linear-gradient(45deg,#ffffff07 0 2px,transparent 2px 16px)}
+.gate>*{position:relative}
+.g-rings{position:absolute;left:50%;top:46%;width:min(120vw,540px);margin:calc(min(120vw,540px)/-2) 0 0 calc(min(120vw,540px)/-2);aspect-ratio:1;pointer-events:none}
+.g-rings circle{fill:none;stroke:var(--gp);stroke-width:1;opacity:.4}
+html:not(.calm) .g-rings .r1{animation:spin 90s linear infinite}html:not(.calm) .g-rings .r2{animation:spin 120s linear infinite reverse}html:not(.calm) .g-rings .r3{animation:spin 70s linear infinite}
+.g-rings circle{transform-box:fill-box;transform-origin:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+.g-top{margin:0 0 6px;font:500 12px var(--sans);letter-spacing:.38em;text-transform:uppercase;color:var(--gp)}
+.g-names{margin:0 0 4px;font:italic 400 clamp(30px,9vw,40px)/1.15 var(--serif)}.g-names i{font-size:.7em;color:var(--blush)}
+.lotus{position:relative;width:min(74vw,320px);aspect-ratio:1;margin:6px 0 0;padding:0;border:0;background:none;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.lotus svg{display:block;width:100%;height:100%;overflow:visible}
+.lotus:focus-visible{outline:2px solid var(--gp);outline-offset:8px;border-radius:50%}
+.hint{margin:6px 0 0;font:italic 18px var(--serif);color:var(--blush-l);letter-spacing:.03em}
+.g-scal{position:absolute;left:0;width:100%;bottom:-23px;height:24px;display:block;fill:var(--green)}

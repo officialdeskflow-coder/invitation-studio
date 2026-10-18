@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f2e8">
+<title>{{seo.title}}</title>
+<meta name="description" content="{{seo.description}}">
+{{#if seo.noindex}}<meta name="robots" content="noindex,nofollow">{{/if}}
+<meta property="og:type" content="website"><meta property="og:site_name" content="{{brand.name}}"><meta property="og:title" content="{{seo.title}}"><meta property="og:description" content="{{seo.description}}">
+{{#if seo.ogImageUrl}}<meta property="og:image" content="{{seo.ogImageUrl}}"><meta property="og:image:type" content="{{seo.ogImageType}}"><meta property="og:image:width" content="{{seo.ogImageW}}"><meta property="og:image:height" content="{{seo.ogImageH}}"><meta property="og:image:alt" content="{{seo.ogImageAlt}}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{{seo.title}}"><meta name="twitter:description" content="{{seo.description}}"><meta name="twitter:image" content="{{seo.ogImageUrl}}">{{/if}}
+{{#if siteUrl}}<meta property="og:url" content="{{siteUrl}}"><link rel="canonical" href="{{siteUrl}}">{{/if}}
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2716%27 fill=%27%232d4337%27/%3E%3Cpath d=%27M16 6c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z%27 fill=%27%23d6b878%27/%3E%3C/svg%3E">
+{{{preloads}}}
+<script>document.documentElement.classList.add('js')</script>
+{{{headAssets}}}
+{{#if jsonld}}<script type="application/ld+json">{{{jsonld}}}</script>{{/if}}
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3c.7 5 4 8.3 9 9-5 .7-8.3 4-9 9-.7-5-4-8.3-9-9 5-.7 8.3-4 9-9z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+<symbol id="i-list" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M9 7h11M9 12h11M9 17h11"/><circle cx="4.8" cy="7" r=".9"/><circle cx="4.8" cy="12" r=".9"/><circle cx="4.8" cy="17" r=".9"/></g></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M12 21s6.5-5.6 6.5-11a6.5 6.5 0 1 0-13 0C5.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.3"/></g></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"><rect x="3.5" y="6" width="17" height="12.5" rx="2"/><path d="M4 7.5l8 6 8-6"/></g></symbol>
+<symbol id="i-note" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17.5V6l10-2v11.5"/><circle cx="6.8" cy="17.5" r="2.2"/><circle cx="16.8" cy="15.5" r="2.2"/></g></symbol>
+<symbol id="i-image" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 17l5-4.5 3.5 3 3-2.5 4.5 4"/></g></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M10 14a3.5 3.5 0 0 0 5 0l3-3a3.5 3.5 0 0 0-5-5l-1 1"/><path d="M14 10a3.5 3.5 0 0 0-5 0l-3 3a3.5 3.5 0 0 0 5 5l1-1"/></g></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 19l1.2-3.6A7.5 7.5 0 1 1 9 18l-4 1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+ <div class="wrap nav-in">
+  <a class="brand" href="#top"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="1"/><path d="M16 7c.6 5 4 8.4 9 9-5 .6-8.4 4-9 9-.6-5-4-8.4-9-9 5-.6 8.4-4 9-9z" fill="currentColor"/></svg><span>{{brand.name}}</span></a>
+  <nav class="links" aria-label="Main"><a href="#demos">Demos</a><a href="#how">How it works</a><a href="#pricing">Packages</a><a href="#faq">Questions</a></nav>
+  <a class="btn btn-sm" href="{{contact.waUrl}}" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>{{nav.cta}}</span></a>
+ </div>
+</header>
+
+<main id="main">
+ <section class="hero">
+  <div class="wrap hero-grid">
+   <div class="hero-copy">
+    <p class="eyebrow" data-reveal>{{hero.eyebrow}}</p>
+    <h1 data-reveal style="--i:1">{{hero.titleBefore}} <em>{{hero.titleEm}}</em> {{hero.titleAfter}}</h1>
+    <p class="lead" data-reveal style="--i:2">{{hero.lead}}</p>
+    <div class="cta-row" data-reveal style="--i:3"><a class="btn" href="{{contact.waUrl}}" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>{{hero.primary}}</span></a><a class="btn btn-ghost" href="#demos"><span>{{hero.secondary}}</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+   </div>
+   <div class="phones" data-reveal style="--i:2">
+    <span class="halo" aria-hidden="true"></span>
+    <figure class="phone p-a"><div class="screen"><img src="{{tpl:previews/royal-hero.webp}}" width="520" height="1125" alt="The Royal Maroon & Gold wedding invitation on a phone" fetchpriority="high"></div></figure>
+    <figure class="phone p-b"><div class="screen"><img src="{{tpl:previews/sage-hero.webp}}" width="520" height="1125" alt="The Sage Garden wedding invitation on a phone"></div></figure>
+   </div>
+  </div>
+ </section>
+
+ <section class="strip" aria-label="Highlights"><div class="wrap strip-in">
+  {{#each highlights}}<div class="hl" data-reveal style="--i:{{@index}}"><h2>{{title}}</h2><p>{{text}}</p></div>{{/each}}
+ </div></section>
+
+ <section class="sec demos" id="demos"><div class="wrap">
+  <header class="sec-head" data-reveal><p class="eyebrow">{{demos.eyebrow}}</p><h2>{{demos.title}}</h2><p class="lead">{{demos.lead}}</p></header>
+  {{#each demos.items}}
+  <article class="demo" data-reveal>
+   <div class="demo-shots">
+    <figure class="phone s1"><div class="screen"><img src="{{shotA}}" width="520" height="1125" alt="" loading="lazy"></div></figure>
+    <figure class="phone s2"><div class="screen"><img src="{{shotB}}" width="520" height="1125" alt="" loading="lazy"></div></figure>
+    <figure class="phone s3"><div class="screen"><img src="{{shotC}}" width="520" height="1125" alt="{{name}} wedding invitation, three screens" loading="lazy"></div></figure>
+   </div>
+   <div class="demo-copy">
+    <p class="eyebrow">{{mood}}</p>
+    <h3>{{name}}</h3>
+    <p class="demo-blurb">{{blurb}}</p>
+    <ul class="swatches" aria-label="Colours">{{#each swatches}}<li style="--c:{{this}}"></li>{{/each}}</ul>
+    <ul class="points">{{#each points}}<li>{{this}}</li>{{/each}}</ul>
+    <div class="cta-row"><a class="btn" href="{{href}}" target="_blank" rel="noopener"><span>Open live demo</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-ghost" href="{{waUrl}}" target="_blank" rel="noopener"><span>I want this design</span></a></div>
+   </div>
+  </article>
+  {{/each}}
+ </div></section>
+
+ <section class="sec how" id="how"><div class="wrap">
+  <header class="sec-head" data-reveal><p class="eyebrow">{{how.eyebrow}}</p><h2>{{how.title}}</h2></header>
+  <ol class="steps">{{#each how.steps}}<li data-reveal style="--i:{{@index}}"><span class="num" aria-hidden="true">{{@number}}</span><h3>{{title}}</h3><p>{{text}}</p></li>{{/each}}</ol>
+ </div></section>
+
+ <section class="sec feat"><div class="wrap">
+  <header class="sec-head" data-reveal><p class="eyebrow">{{features.eyebrow}}</p><h2>{{features.title}}</h2></header>
+  <ul class="grid">{{#each features.items}}<li data-reveal style="--i:{{@index}}"><svg class="ico" aria-hidden="true"><use href="#i-{{icon}}"/></svg><h3>{{title}}</h3><p>{{text}}</p></li>{{/each}}</ul>
+ </div></section>
+
+ <section class="planner"><div class="wrap planner-in" data-reveal>
+  <div><p class="eyebrow">{{planners.eyebrow}}</p><h2>{{planners.title}}</h2><p>{{planners.text}}</p></div>
+  <a class="btn btn-light" href="{{planners.waUrl}}" target="_blank" rel="noopener"><span>{{planners.cta}}</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+ </div></section>
+
+ <section class="sec pricing" id="pricing"><div class="wrap">
+  <header class="sec-head center" data-reveal><p class="eyebrow">{{pricing.eyebrow}}</p><h2>{{pricing.title}}</h2><p class="lead">{{pricing.lead}}</p></header>
+  <div class="plans">
+   {{#each pricing.items}}
+   <article class="plan{{#if featured}} featured{{/if}}" data-reveal style="--i:{{@index}}">
+    {{#if featured}}<span class="badge">Most chosen</span>{{/if}}
+    <h3>{{name}}</h3><p class="tag">{{tagline}}</p>
+    {{#if price}}<p class="price">{{price}}{{#if unit}}<small>{{unit}}</small>{{/if}}</p>{{else}}<p class="price ask">{{pricing.askLabel}}</p>{{/if}}
+    <ul>{{#each features}}<li>{{this}}</li>{{/each}}</ul>
+    <a class="btn{{#if featured}}{{else}} btn-ghost{{/if}}" href="{{waUrl}}" target="_blank" rel="noopener"><span>{{pricing.cta}}</span></a>
+   </article>
+   {{/each}}
+  </div>
+ </div></section>
+
+ {{#if testimonials}}
+ <section class="sec quotes"><div class="wrap"><ul class="qgrid">{{#each testimonials}}<li data-reveal><blockquote>{{quote}}</blockquote><p>{{who}}</p></li>{{/each}}</ul></div></section>
+ {{/if}}
+
+ <section class="sec faq" id="faq"><div class="wrap narrow">
+  <header class="sec-head center" data-reveal><p class="eyebrow">{{faq.eyebrow}}</p><h2>{{faq.title}}</h2></header>
+  <div class="qa" data-reveal>{{#each faq.items}}<details><summary>{{q}}</summary><p>{{a}}</p></details>{{/each}}</div>
+ </div></section>
+
+ <section class="sec book" id="book"><div class="wrap book-in">
+  <header class="sec-head" data-reveal><p class="eyebrow">{{book.eyebrow}}</p><h2>{{book.title}}</h2><p class="lead">{{book.text}}</p>
+   {{#if contact.email}}<p class="alt">Prefer email? <a href="mailto:{{contact.email}}">{{contact.email}}</a></p>{{/if}}
+   {{#if contact.instagram}}<p class="alt">Instagram <a href="https://instagram.com/{{contact.instagram}}" target="_blank" rel="noopener">@{{contact.instagram}}</a></p>{{/if}}
+  </header>
+  <form class="bform" id="bform" data-reveal style="--i:1" data-wa="{{contact.waBase}}" data-intro="{{book.messageIntro}}">
+   <div class="f"><label for="b-names">{{book.labels.names}}</label><input id="b-names" name="names" placeholder="{{book.labels.namesPh}}" autocomplete="off" required maxlength="80"></div>
+   <div class="f two"><div><label for="b-date">{{book.labels.date}}</label><input id="b-date" name="date" type="date"></div>
+    <div><label for="b-style">{{book.labels.style}}</label><select id="b-style" name="style"><option value="">{{book.labels.any}}</option>{{#each demos.items}}<option>{{name}}</option>{{/each}}</select></div></div>
+   <div class="f"><label for="b-notes">{{book.labels.notes}}</label><textarea id="b-notes" name="notes" rows="3" placeholder="{{book.labels.notesPh}}" maxlength="400"></textarea></div>
+   <button class="btn" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>{{book.labels.submit}}</span></button>
+   <noscript><p class="alt">JavaScript is off: <a href="{{contact.waUrl}}">message us directly on WhatsApp</a>.</p></noscript>
+  </form>
+ </div></section>
+</main>
+
+<footer class="foot"><div class="wrap foot-in">
+ <a class="brand" href="#top"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="1"/><path d="M16 7c.6 5 4 8.4 9 9-5 .6-8.4 4-9 9-.6-5-4-8.4-9-9 5-.6 8.4-4 9-9z" fill="currentColor"/></svg><span>{{brand.name}}</span></a>
+ <p>{{footer.note}}</p>
+ <p class="copy">© {{year}} {{brand.name}}</p>
+</div></footer>
+<a class="fab" href="{{contact.waUrl}}" target="_blank" rel="noopener" aria-label="{{nav.cta}}"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+{{{scripts}}}
+</body>
+</html>
