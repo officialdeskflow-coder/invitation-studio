@@ -1,0 +1,56 @@
+{
+  "_help": "Demo milestone birthday card (black and gold, countdown only). Change the details below, then run: npm run build -- riya-30th. Set rsvp.enabled to true (and rsvp.whatsapp) to add a reply form. Guide: docs/BIRTHDAY-CARDS.md",
+  "template": "birthday-gold",
+  "pageTitle": "Riya’s 30th Birthday",
+  "name": "Riya",
+  "age": 30,
+  "subtitle": "Riya turns thirty",
+  "start": "2027-11-27T20:00:00+05:30",
+  "end": "2027-11-28T00:00:00+05:30",
+  "venue": {
+    "name": "The Rooftop",
+    "address": "Sector 17, Chandigarh",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sector+17+Chandigarh"
+  },
+  "details": [
+    {
+      "label": "Dress code",
+      "value": "Black and gold"
+    },
+    {
+      "label": "Dinner",
+      "value": "Served from 9 PM"
+    }
+  ],
+  "schedule": [
+    {
+      "time": "8:00 PM",
+      "title": "Welcome drinks"
+    },
+    {
+      "time": "9:00 PM",
+      "title": "Dinner"
+    },
+    {
+      "time": "10:30 PM",
+      "title": "Cake and toasts"
+    },
+    {
+      "time": "11:00 PM",
+      "title": "Dance floor opens"
+    }
+  ],
+  "host": {
+    "names": "Riya",
+    "note": "Your presence is the best gift."
+  },
+  "texts": {
+    "countdownTitle": "Counting down to the big night",
+    "planTitle": "The evening",
+    "seeYou": "See you there"
+  },
+  "seo": {
+    "noindex": true,
+    "ogImage": "photos/og.jpg"
+  }
+}

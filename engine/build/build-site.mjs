@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Builds your sales website: landing-site/ (the SOURCE, never uploaded)  ->  READY-TO-UPLOAD/sales-website/   (upload THAT folder)
-//   node engine/build/build-site.mjs                 full site: index.html + site.css + site.js + assets/ + demo/ (the two live demos)
+//   node engine/build/build-site.mjs                 full site: index.html + site.css + site.js + assets/ + demo/ (the live demos, plus any in landing-site/extra-demos.json)
 //   node engine/build/build-site.mjs --single-file   one self-contained index.html (demo buttons use "previewUrl")
 import fs from 'node:fs';
 import os from 'node:os';
@@ -28,6 +28,13 @@ export function buildSite({ single = false, out = path.join(ROOT, 'READY-TO-UPLO
     if (!single && !fs.existsSync(path.join(ROOT, 'clients', it.client, 'client.json'))) errors.push(`demo client not found: clients/${it.client}`);
     for (const im of it.images) if (!fs.existsSync(path.join(siteDir, 'assets', 'previews', `${im}.webp`))) errors.push(`missing preview image landing-site/assets/previews/${im}.webp (run: python engine/tools/make-previews.py)`);
     if (single && !it.previewUrl) warnings.push(`demo "${it.name}" has no previewUrl: its button will not open anything in a single-file build`);
+  }
+  const extraFile = path.join(siteDir, 'extra-demos.json');
+  const extra = fs.existsSync(extraFile) ? (JSON.parse(read(extraFile)).demos || []) : [];
+  for (const it of extra) {
+    if (!/^[a-z0-9][a-z0-9-]{1,40}$/.test(it.path || '')) errors.push(`extra demo path "${it.path}" must be lowercase letters, numbers and dashes (landing-site/extra-demos.json)`);
+    else if (site.demos.items.some((d) => d.path === it.path) || extra.filter((d) => d.path === it.path).length > 1) errors.push(`extra demo path "${it.path}" is used twice`);
+    if (!single && !fs.existsSync(path.join(ROOT, 'clients', it.client || '', 'client.json'))) errors.push(`extra demo client not found: clients/${it.client}`);
   }
   if (errors.length) throw new Error(`Problems in landing-site/site.json:\n  - ${errors.join('\n  - ')}`);
 
@@ -60,7 +67,7 @@ export function buildSite({ single = false, out = path.join(ROOT, 'READY-TO-UPLO
   else { fs.writeFileSync(path.join(outDir, 'site.css'), css); fs.writeFileSync(path.join(outDir, 'site.js'), js); site.headAssets = '<link rel="stylesheet" href="site.css">'; site.scripts = '<script src="site.js"></script>'; }
 
   // ---- the two live demos travel inside the landing folder (full build only)
-  if (!single) for (const it of site.demos.items) {
+  if (!single) for (const it of [...site.demos.items, ...extra]) {
     const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'invi-demo-'));
     const ov = site.siteUrl ? { seo: { url: `${site.siteUrl.replace(/\/?$/, '/')}demo/${it.path}/`, ...(fs.existsSync(path.join(ROOT, 'clients', it.client, 'photos', 'og.jpg')) ? { ogImage: 'photos/og.jpg' } : {}) } } : null;
     try { build(it.client, { out: tmp, split: true, quiet: true, overrides: ov }); fs.cpSync(path.join(tmp, it.client), path.join(outDir, 'demo', it.path), { recursive: true }); } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
@@ -75,7 +82,7 @@ export function buildSite({ single = false, out = path.join(ROOT, 'READY-TO-UPLO
   if (!single) fs.writeFileSync(path.join(outDir, '_headers'), '/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n');
   fs.writeFileSync(path.join(siteDir, 'last-build.json'), JSON.stringify({ builtAt: new Date().toISOString(), mode: single ? 'single-file' : 'full', indexBytes: Buffer.byteLength(html), warnings }, null, 1));
   if (!quiet) { console.log(`✔ landing page (${single ? 'single file' : 'full'}, ${(Buffer.byteLength(html) / 1024).toFixed(0)} KB index.html)`); warnings.forEach((w) => console.log(`  ! ${w}`)); console.log(`  UPLOAD THIS FOLDER → ${path.relative(process.cwd(), outDir)}`); }
-  return { outDir, warnings, site };
+  return { outDir, warnings, site, extra };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

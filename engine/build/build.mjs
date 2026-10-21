@@ -11,6 +11,7 @@ import { compile, render, TemplateError } from './lib/engine.mjs';
 import { makeAssets } from './lib/assets.mjs';
 import { finalize, validate, runtimeConfig, deepMerge } from './lib/config.mjs';
 import { imageInfo } from './lib/imgsize.mjs';
+import { buildApp } from './lib/app-build.mjs';
 
 export const ENGINE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'); // .../engine
 export const ROOT = path.resolve(ENGINE, '..'); // project folder (clients/, templates/, READY-TO-UPLOAD/)
@@ -27,6 +28,7 @@ export function build(slug, { split = true, out = path.join(ROOT, 'READY-TO-UPLO
   if (!fs.existsSync(tplDir)) throw new Error(`Unknown template "${tplId}" (see templates/)`);
   const template = JSON.parse(read(path.join(tplDir, 'template.json')));
   const defaults = JSON.parse(read(path.join(tplDir, 'defaults.json')));
+  if (template.kind === 'app') return buildApp({ slug, client, template, defaults, tplDir, clientDir, split, out, quiet, root: ROOT, engine: ENGINE }); // birthday cards: see lib/app-build.mjs
   const cfg = finalize(client, defaults, slug);
 
   const enabled = new Set(template.sections.filter((s) => s.required || cfg.sections[s.id] !== false).map((s) => s.id));

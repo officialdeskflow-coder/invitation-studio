@@ -1,0 +1,58 @@
+{
+  "_help": "Demo birthday card (kids' party with RSVP). Change the details below, then run: npm run build -- aarav-birthday. Anything left out uses the template defaults. Keys starting with _ are ignored. Guide: docs/BIRTHDAY-CARDS.md",
+  "template": "birthday-party",
+  "pageTitle": "Aarav’s 5th Birthday Party",
+  "kicker": "YOU’RE INVITED TO",
+  "name": "Aarav’s",
+  "age": 5,
+  "occasion": "Birthday!",
+  "start": "2027-12-11T16:00:00+05:30",
+  "end": "2027-12-11T19:00:00+05:30",
+  "venue": {
+    "name": "Little Stars Play Park",
+    "address": "Sector 70, Mohali",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Little+Stars+Play+Park+Mohali"
+  },
+  "details": [
+    {
+      "label": "Dress code",
+      "value": "Superhero capes welcome!"
+    },
+    {
+      "label": "Good to know",
+      "value": "Snacks, cake and games are all taken care of."
+    }
+  ],
+  "schedule": [
+    {
+      "time": "4:00 PM",
+      "title": "Welcome and games"
+    },
+    {
+      "time": "5:00 PM",
+      "title": "Magic show"
+    },
+    {
+      "time": "5:45 PM",
+      "title": "Cake time"
+    },
+    {
+      "time": "6:15 PM",
+      "title": "Snacks and dancing"
+    }
+  ],
+  "host": {
+    "names": "Meera & Karan",
+    "note": "We can’t wait to celebrate with you!"
+  },
+  "rsvp": {
+    "enabled": true,
+    "whatsapp": "910000000000",
+    "maxGuests": 6,
+    "replyBy": "Please reply by 4 December"
+  },
+  "seo": {
+    "noindex": true,
+    "ogImage": "photos/og.jpg"
+  }
+}

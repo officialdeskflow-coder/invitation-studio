@@ -1,0 +1,15 @@
+{
+  "_help": "Extra live demos that are built into the sales website at /demo/<path>/ but are not listed on the landing page. Share these links yourself (Instagram, WhatsApp). Each needs a folder in clients/.",
+  "demos": [
+    {
+      "path": "birthday-party",
+      "client": "aarav-birthday",
+      "name": "Birthday Party (kids, with RSVP)"
+    },
+    {
+      "path": "birthday-milestone",
+      "client": "riya-30th",
+      "name": "Birthday Milestone (black and gold)"
+    }
+  ]
+}

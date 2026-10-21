@@ -1,0 +1,16 @@
+{
+ "id": "birthday-party",
+ "name": "Birthday Party",
+ "version": "1.0.0",
+ "kind": "app",
+ "description": "Bright, playful kids' birthday card: tap-to-open gate with balloons and bunting, live countdown, party plan, map, RSVP through WhatsApp.",
+ "theme": "party",
+ "themeColor": "#a9dcff",
+ "app": "shared:birthday",
+ "fonts": [
+  { "family": "Fredoka", "weight": 500, "style": "normal", "file": "shared:fonts/fredoka-latin-500-normal.woff2" },
+  { "family": "Fredoka", "weight": 600, "style": "normal", "file": "shared:fonts/fredoka-latin-600-normal.woff2" },
+  { "family": "Fredoka", "weight": 700, "style": "normal", "file": "shared:fonts/fredoka-latin-700-normal.woff2" }
+ ],
+ "vendor": ["shared:vendor/gsap.min.js", "shared:vendor/ScrollTrigger.min.js"]
+}

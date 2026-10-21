@@ -1,0 +1,18 @@
+{
+ "id": "birthday-gold",
+ "name": "Birthday Milestone (black & gold)",
+ "version": "1.0.0",
+ "kind": "app",
+ "description": "Dark, elegant milestone birthday card (18th, 21st, 30th, 50th): curtains that part, glowing age, live countdown, evening plan, map. Countdown-only by default; RSVP can be switched on.",
+ "theme": "gold",
+ "themeColor": "#0e0b06",
+ "app": "shared:birthday",
+ "fonts": [
+  { "family": "Playfair Display", "weight": 400, "style": "italic", "file": "shared:fonts/playfair-display-latin-400-italic.woff2" },
+  { "family": "Playfair Display", "weight": 600, "style": "italic", "file": "shared:fonts/playfair-display-latin-600-italic.woff2" },
+  { "family": "Jost", "weight": 300, "style": "normal", "file": "shared:fonts/jost-latin-300-normal.woff2" },
+  { "family": "Jost", "weight": 400, "style": "normal", "file": "shared:fonts/jost-latin-400-normal.woff2" },
+  { "family": "Jost", "weight": 500, "style": "normal", "file": "shared:fonts/jost-latin-500-normal.woff2" }
+ ],
+ "vendor": ["shared:vendor/gsap.min.js", "shared:vendor/ScrollTrigger.min.js"]
+}

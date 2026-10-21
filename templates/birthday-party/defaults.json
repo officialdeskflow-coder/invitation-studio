@@ -1,0 +1,12 @@
+{
+ "lang": "en",
+ "kicker": "YOU’RE INVITED TO",
+ "occasion": "Birthday!",
+ "subtitle": "",
+ "details": [],
+ "schedule": [],
+ "host": { "names": "", "note": "" },
+ "rsvp": { "enabled": true, "whatsapp": "", "endpoint": "", "maxGuests": 6, "replyBy": "" },
+ "texts": {},
+ "seo": { "noindex": true, "url": "", "ogImage": "", "title": "", "description": "" }
+}

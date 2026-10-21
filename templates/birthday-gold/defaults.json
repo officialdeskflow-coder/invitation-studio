@@ -1,0 +1,12 @@
+{
+ "lang": "en",
+ "kicker": "THE BIG",
+ "occasion": "",
+ "subtitle": "",
+ "details": [],
+ "schedule": [],
+ "host": { "names": "", "note": "" },
+ "rsvp": { "enabled": false, "whatsapp": "", "endpoint": "", "maxGuests": 1, "replyBy": "" },
+ "texts": {},
+ "seo": { "noindex": true, "url": "", "ogImage": "", "title": "", "description": "" }
+}
