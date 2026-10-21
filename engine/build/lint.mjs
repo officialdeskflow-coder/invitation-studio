@@ -130,6 +130,7 @@ try {
   const demoOk = r.site.demos.items.every((d) => fs.existsSync(path.join(dir, 'demo', d.path, 'index.html')));
   must(demoOk, 'landing: both live demos are inside the folder', 'landing: a demo folder is missing');
   must(/<h1[\s>]/.test(stripped) && (stripped.match(/<h1[\s>]/g) || []).length === 1, 'landing: exactly one h1', 'landing: needs exactly one h1');
+  if (r.site.birthday && r.site.birthday.enabled) must(/id="birthdays"/.test(html) && r.site.birthday.items.every((b) => html.includes(`href="demo/${b.path}/"`)), 'landing: birthday section shows both cards with working demo links', 'landing: birthday section or its demo links are missing');
   must(/https:\/\/wa\.me\/\d{8,15}/.test(html), 'landing: WhatsApp links are well formed', 'landing: WhatsApp link malformed');
 } catch (e) { bad('landing build failed: ' + e.message.split('\n')[0]); }
 {

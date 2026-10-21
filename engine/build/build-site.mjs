@@ -36,6 +36,14 @@ export function buildSite({ single = false, out = path.join(ROOT, 'READY-TO-UPLO
     else if (site.demos.items.some((d) => d.path === it.path) || extra.filter((d) => d.path === it.path).length > 1) errors.push(`extra demo path "${it.path}" is used twice`);
     if (!single && !fs.existsSync(path.join(ROOT, 'clients', it.client || '', 'client.json'))) errors.push(`extra demo client not found: clients/${it.client}`);
   }
+  const bdFile = path.join(siteDir, 'birthday.json');
+  const bd = fs.existsSync(bdFile) ? JSON.parse(read(bdFile)) : { enabled: false, items: [] };
+  bd.enabled = bd.enabled !== false && (bd.items || []).length > 0; bd.items = bd.items || [];
+  if (bd.enabled) for (const it of bd.items) {
+    if (!extra.some((d) => d.path === it.path) && !site.demos.items.some((d) => d.path === it.path)) errors.push(`birthday section: no live demo with path "${it.path}" (landing-site/extra-demos.json)`);
+    for (const im of it.images || []) if (!fs.existsSync(path.join(siteDir, 'assets', 'previews', `${im}.webp`))) errors.push(`birthday section: missing preview picture landing-site/assets/previews/${im}.webp`);
+    if ((it.images || []).length !== 3) errors.push(`birthday section: "${it.name}" needs exactly 3 preview pictures`);
+  }
   if (errors.length) throw new Error(`Problems in landing-site/site.json:\n  - ${errors.join('\n  - ')}`);
 
   const outDir = path.join(out, 'sales-website');
@@ -49,6 +57,8 @@ export function buildSite({ single = false, out = path.join(ROOT, 'READY-TO-UPLO
   site.contact.waUrl = wa(intro);
   site.planners.waUrl = wa('Hello! I am a wedding planner and would like to ask about planner rates.');
   site.demos.items.forEach((it) => { it.waUrl = wa(`${intro} I would like the "${it.name}" design.`); it.href = single ? (it.previewUrl || '#') : `demo/${it.path}/`; [it.shotA, it.shotB, it.shotC] = it.images.map((im) => assets.tpl(`previews/${im}.webp`)); });
+  site.birthday = bd;
+  if (bd.enabled) bd.items.forEach((it) => { it.waUrl = wa(`${bd.messageIntro || 'Hello! I would like a birthday invitation.'} I would like the "${it.name}" design.`); it.href = single ? (it.previewUrl || '#') : `demo/${it.path}/`; [it.shotA, it.shotB, it.shotC] = it.images.map((im) => assets.tpl(`previews/${im}.webp`)); });
   site.pricing.items.forEach((p) => { p.waUrl = wa(`${intro} I am interested in the ${p.name} package.`); });
   site.year = new Date().getFullYear();
   Object.assign(site.seo, { ogImageUrl: '', ogImageType: '', ogImageW: '', ogImageH: '', ogImageAlt: `${site.brand.name}: ${site.brand.tagline}` });

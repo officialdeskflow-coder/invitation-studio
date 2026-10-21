@@ -134,3 +134,5 @@ select{appearance:none;-webkit-appearance:none;background:linear-gradient(45deg,
 @media (max-width:559px){:root{--t-base:1.0625rem}.sec-head{margin-bottom:var(--s6)}.lead{font-size:1.125rem}  .qa summary{padding:var(--s4) 0;font-size:1.375rem}.qa details p{padding-right:0}.plan{padding:var(--s5)}.btn{min-height:54px}}
 
 @media (min-width:760px) and (max-width:1099px){.phones .phone{width:min(52%,250px)}.p-a{left:0}.p-b{right:0}.hero h1{font-size:clamp(2.6rem,1.2rem + 5vw,4.4rem)}}
+/* five menu links fit between 900 and 1019 px */
+@media (min-width:900px) and (max-width:1019px){.links{gap:var(--s4)}.links a{letter-spacing:.1em}}

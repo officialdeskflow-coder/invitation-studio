@@ -7,7 +7,7 @@ Two ready looks, built the same way as the wedding cards (one `client.json` per 
 | `birthday-party` | bright and playful (kids' parties): bunting, balloons, confetti | RSVP on by default |
 | `birthday-gold` | black and gold (18th, 21st, 30th, 50th): curtains, glowing age | countdown only by default |
 
-Demo cards: `clients/aarav-birthday` (party) and `clients/riya-30th` (gold). They are live on your website at `/demo/birthday-party/` and `/demo/birthday-milestone/` (listed in `landing-site/extra-demos.json`; they are not shown on the landing page, share the links yourself).
+Demo cards: `clients/aarav-birthday` (party) and `clients/riya-30th` (gold). They are live on your website at `/demo/birthday-party/` and `/demo/birthday-milestone/` (built from `landing-site/extra-demos.json`) and shown in the "Birthday & party invitations" section of the landing page (text and pictures in `landing-site/birthday.json`; delete that file or set `enabled` to false to hide the section).
 
 ## Make a card for a client
 1. `npm run new:client -- aarav-5th --template birthday-party`   (or `--template birthday-gold`)

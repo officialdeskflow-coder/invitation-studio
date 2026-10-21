@@ -1,0 +1,52 @@
+{
+  "_help": "The Birthday section on the landing page. Delete this file or set enabled to false to hide the section. Each item needs a live demo built from landing-site/extra-demos.json (same path) and three preview pictures in landing-site/assets/previews/.",
+  "enabled": true,
+  "eyebrow": "Birthday & party invitations",
+  "title": "Parties get their own animated cards",
+  "lead": "The same tap-to-open card with a live countdown and a map, made for birthdays. Tap a demo to open the real invitation, then message us your date and we will send a quote.",
+  "messageIntro": "Hello! I would like a birthday invitation.",
+  "items": [
+    {
+      "path": "birthday-party",
+      "name": "Birthday Party",
+      "mood": "Playful, with RSVP",
+      "blurb": "Balloons and bunting fly away when the card opens. Guests see a live countdown, the party plan and the venue map, and can reply in one tap on WhatsApp. Made for kids’ birthdays.",
+      "swatches": [
+        "#a9dcff",
+        "#ff6b57",
+        "#ffd75e"
+      ],
+      "images": [
+        "birthday-party-1",
+        "birthday-party-2",
+        "birthday-party-3"
+      ],
+      "points": [
+        "Balloons, bunting and confetti",
+        "Live countdown and party plan",
+        "One-tap RSVP on WhatsApp"
+      ]
+    },
+    {
+      "path": "birthday-milestone",
+      "name": "Birthday Milestone",
+      "mood": "Elegant, countdown only",
+      "blurb": "Gold curtains part to reveal a glowing age and a live countdown to the big night. Made for 18th, 21st, 30th, 50th and every big birthday. A reply form can be switched on if you want one.",
+      "swatches": [
+        "#0e0b06",
+        "#d6b878",
+        "#f1dca0"
+      ],
+      "images": [
+        "birthday-milestone-1",
+        "birthday-milestone-2",
+        "birthday-milestone-3"
+      ],
+      "points": [
+        "Curtains that part, glowing age",
+        "Live countdown and evening plan",
+        "Reply form optional"
+      ]
+    }
+  ]
+}
