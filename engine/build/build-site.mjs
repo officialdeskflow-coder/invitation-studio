@@ -60,6 +60,10 @@ export function buildSite({ single = false, out = path.join(ROOT, 'READY-TO-UPLO
   site.birthday = bd;
   if (bd.enabled) bd.items.forEach((it) => { it.waUrl = wa(`${bd.messageIntro || 'Hello! I would like a birthday invitation.'} I would like the "${it.name}" design.`); it.href = single ? (it.previewUrl || '#') : `demo/${it.path}/`; [it.shotA, it.shotB, it.shotC] = it.images.map((im) => assets.tpl(`previews/${im}.webp`)); });
   site.pricing.items.forEach((p) => { p.waUrl = wa(`${intro} I am interested in the ${p.name} package.`); });
+  const fontsFile = path.join(siteDir, 'fonts.json');
+  if (fs.existsSync(fontsFile)) site.fonts = JSON.parse(read(fontsFile)).fonts;
+  [site.demos.items, bd.items].forEach((list) => list.forEach((it) => { it.tint = (it.swatches || [])[0] || '#1a1a1a'; }));
+  const words = String(site.brand.name).trim().split(/\s+/); site.brand.first = words[0]; site.brand.rest = words.slice(1).join(' ');
   site.year = new Date().getFullYear();
   Object.assign(site.seo, { ogImageUrl: '', ogImageType: '', ogImageW: '', ogImageH: '', ogImageAlt: `${site.brand.name}: ${site.brand.tagline}` });
   const ogFile = site.seo.ogImage ? path.join(siteDir, 'assets', site.seo.ogImage) : '';

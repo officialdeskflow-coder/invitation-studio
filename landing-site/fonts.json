@@ -1,0 +1,9 @@
+{
+  "_help": "Fonts used by the landing page (overrides the fonts list in site.json). Files live in engine/shared/fonts/.",
+  "fonts": [
+    { "family": "Outfit", "weight": 200, "style": "normal", "file": "outfit-latin-200-normal.woff2" },
+    { "family": "Outfit", "weight": 300, "style": "normal", "file": "outfit-latin-300-normal.woff2" },
+    { "family": "Outfit", "weight": 400, "style": "normal", "file": "outfit-latin-400-normal.woff2" },
+    { "family": "Outfit", "weight": 500, "style": "normal", "file": "outfit-latin-500-normal.woff2" }
+  ]
+}

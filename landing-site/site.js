@@ -1,6 +1,15 @@
 (function(){
 'use strict';
 var d=document,nav=d.getElementById('nav');
+
+/* two-tone headlines: the first sentence (or half) in full colour, the rest in grey */
+[].slice.call(d.querySelectorAll('[data-duo]')).forEach(function(h){
+  var t=h.textContent.replace(/\s+/g,' ').trim(),m=/^(.+?[.?!])\s+(.+)$/.exec(t),a,b;
+  if(m){a=m[1];b=m[2]}else{var w=t.split(' ');if(w.length<3)return;var k=Math.ceil(w.length*.5);a=w.slice(0,k).join(' ');b=w.slice(k).join(' ')}
+  h.textContent='';h.appendChild(d.createTextNode(a+' '));var sp=d.createElement('span');sp.className='dim';sp.textContent=b;h.appendChild(sp);
+});
+/* the wordmark: one quiet letter, like a watermark */
+[].slice.call(d.querySelectorAll('.wordmark')).forEach(function(w){var s=w.textContent,i=s.toUpperCase().indexOf('A',2);if(i<0)return;w.textContent='';w.appendChild(d.createTextNode(s.slice(0,i)));var q=d.createElement('span');q.className='quiet';q.textContent=s[i];w.appendChild(q);w.appendChild(d.createTextNode(s.slice(i+1)))});
 /* nav shadow once the page scrolls */
 function onScroll(){if(nav)nav.classList.toggle('on',(window.scrollY||0)>8)}
 onScroll();addEventListener('scroll',onScroll,{passive:true});
